@@ -1,0 +1,133 @@
+<section id="others">
+      <h3 class="text-center" style="font-size:150%;">更多服务</h3>
+      <div class="line_container_h">
+          <div class="line_solid"></div>
+      </div>
+      <div class="container">
+        <div class="others_slider">
+          <div class="others_feature">
+            <div class="others_wrapper">
+            <div class="others_i_container">
+              <i class="ion-camera others_icon"></i>
+            </div>
+            <div class="others_text">
+              <h3 class="text-center">摄影摄像</h3>
+              <p class="text-center">产品拍摄 航拍 全景拍摄</p>
+            </div>
+            </div>
+          </div>
+          <div class="others_feature">
+            <div class="others_wrapper">
+            <div class="others_i_container">
+              <i class="ion-images others_icon"></i>
+            </div>
+            <div class="others_text">
+              <h3 class="text-center">单页画册</h3>
+              <p class="text-center">单页宣传册高端定制</p>
+            </div>
+            </div>
+          </div>
+          <div class="others_feature">
+            <div class="others_wrapper">
+            <div class="others_i_container">
+              <i class="ion-paintbrush others_icon"></i>
+            </div>
+            <div class="others_text">
+              <h3 class="text-center">LOGO设计</h3>
+              <p class="text-center">高端设计师主案 不同凡响</p>
+            </div>
+            </div>
+          </div>
+          <div class="others_feature">
+            <div class="others_wrapper">
+            <div class="others_i_container">
+              <i class="ion-videocamera others_icon"></i>
+            </div>
+            <div class="others_text">
+              <h3 class="text-center">视频制作</h3>
+              <p class="text-center">视频拍摄 后期 三维动画</p>
+            </div>
+            </div>
+          </div>
+          <div class="others_feature">
+            <div class="others_wrapper">
+            <div class="others_i_container">
+              <i class="ion-university others_icon"></i>
+            </div>
+            <div class="others_text">
+              <h3 class="text-center">设计培训</h3>
+              <p class="text-center">30天掌握技能 迅速提高</p>
+            </div>
+            </div>
+          </div>
+          <div class="others_feature">
+            <div class="others_wrapper">
+            <div class="others_i_container"> 
+              <i class="ion-compose others_icon"></i>
+            </div>
+            <div class="others_text">
+              <h3 class="text-center">平面设计</h3>
+              <p class="text-center">海报广告设计 精彩表现</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer_wrapper">
+      <div class="footer_contactbig">
+        <h3 class="text-center" style="font-size:120%">联系我们，期待与您的合作！</h3>
+        <h3 class="text-center" style="font-size:120%">
+        <i class="ion-ios-telephone-outline" style="display:inline-block;font-size:260%;vertical-align: middle;margin-right:10px;"></i>
+        15610002502 &nbsp;&nbsp;&nbsp;&nbsp;<span class="v">|&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="r"><br></span>
+        <i class="ion-ios-email-outline" style="display:inline-block;font-size:260%;vertical-align: middle;margin-right:10px;"></i>
+         619463273@qq.com
+        </h3>
+      </div>
+      <div class="footer_link">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h3>青岛南北极效果图工作室</h3>
+              <p style="padding-right:20px;line-height:2;">青岛南北极效果图工作室成立注册于二零零四年三月，多年来一直从事于三维效果图专业技术的表现，潜心贯注空间、造型、色彩、文化，一直追求创作同艺术的不断提升。</p>
+          </div> 
+          
+          <div class="col-sm-2">
+              <h3>快速链接</h3>
+              <p><a href="#">关于我们</a></p>
+              <p><a href="#">近期案例作品</a></p>
+              <p><a href="#">绘图技巧</a></p>
+              <p><a href="#">原创文章</a></p>
+              <p><a href="#">招聘英才</a></p>
+          </div>
+          <div class="col-sm-4">
+              <h3>联系方式</h3>
+              <p>地址：青岛市市南区逍遥三路10号</p>
+              <p>业务QQ：619463273</p>
+              <p>电话：156-1000-2502</p>
+              <p>联系人：邢经理</p>
+              <p>email：619463273@qq.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+         <p class="text-center">© 2018 Copyright:<a href="#"><strong>青岛南北极</strong></a></p>  
+    </div>
+  </div>
+    </footer>
+    
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <?php wp_footer(); ?>
+  </body>
+</html>
