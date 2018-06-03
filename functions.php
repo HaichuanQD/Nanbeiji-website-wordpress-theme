@@ -14,6 +14,7 @@
         wp_enqueue_style('css_lightbox_load',get_theme_file_uri('/css/lightbox.css'));
         wp_enqueue_style('css_aos_load',get_theme_file_uri('/css/aos.css'));
         wp_enqueue_style('css_slick_main_load',get_theme_file_uri('/css/slick.css'));
+        wp_enqueue_style('css_slick_second_main_load',get_theme_file_uri('/css/style_second.css'));
         wp_enqueue_script('js_jquery_load',get_theme_file_uri('/js/jquery-2.1.4.min.js'),NULL,'2.1.4',true);
         wp_enqueue_script('js_bootstrap_load',get_theme_file_uri('/js/bootstrap.js'),NULL,'3.3.7',true);
         wp_enqueue_script('js_slick_load',get_theme_file_uri('/js/slick.js'),NULL,'1.5.7',true);
