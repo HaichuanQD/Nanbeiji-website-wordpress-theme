@@ -437,41 +437,41 @@
                   <article class="ny-news"><a href="#" target="_blank" class="pull-left pic-link visible-lg"><span class="case-hover"><span class="hover-link"></span></span><img src="<?php echo get_theme_file_uri('/img/eng_sm1.jpg')?>" class="ylw-img-responsive2" alt="想要做好网站优化从基础开始"/></a>
                     <h4><a href="#" target="_blank">想要做好网站优化从基础开始</a></h4>
                     <p>比如基础的SEO优化知识，比如主机的选择。 SEO优化路上，存在很多人云亦云的东西，听得多了，站长们也就不在把那些基础知识当回事...</p>
-                    <p><span class="fl"><a href='/html/news/gongsi/'>公司新闻</a></span><span class="gz"><script src="/plus/count.php?view=yes&aid=19&mid=1" type='text/javascript' language="javascript"></script></span><span class="sj">2016-01-28</span></p>
+                    <p><span class="fl"><a href='/html/news/gongsi/'>公司新闻</a></span><span class="gz"></span><span class="sj">2016-01-28</span></p>
                   </article>
                 </figure><figure class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                   <article class="ny-news"><a href="#" target="_blank" class="pull-left pic-link visible-lg"><span class="case-hover"><span class="hover-link"></span></span><img src="<?php echo get_theme_file_uri('/img/eng_sm1.jpg')?>" class="ylw-img-responsive2" alt="做好三点，你也可以成为网站"/></a>
                     <h4><a href="#" target="_blank">做好三点，你也可以成为网站</a></h4>
                     <p>关于seo这个话题网络上有很多人都写过相关的文章，在这里我只说明三点，只要做好这三点你的排名就不会有问题。 第一：网站前期关键词...</p>
-                    <p><span class="fl"><a href='/html/news/gongsi/'>公司新闻</a></span><span class="gz"><script src="/plus/count.php?view=yes&aid=18&mid=1" type='text/javascript' language="javascript"></script></span><span class="sj">2016-01-28</span></p>
+                    <p><span class="fl"><a href='/html/news/gongsi/'>公司新闻</a></span><span class="gz"></span><span class="sj">2016-01-28</span></p>
                   </article>
                 </figure>
                 <figure class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                   <article class="ny-news"><a href="#" target="_blank" class="pull-left pic-link visible-lg"><span class="case-hover"><span class="hover-link"></span></span><img src="<?php echo get_theme_file_uri('/img/eng_sm1.jpg')?>" class="ylw-img-responsive2" alt="企业网站首页呈现什么内容最"/></a>
                     <h4><a href="#" target="_blank">企业网站首页呈现什么内容最</a></h4>
                     <p>网站首页就是网站的门面，是首先展示给用户的页面，也是搜索蜘蛛来得最勤的地方，所以首页的内容很重要，一定要能吸引用户的兴趣，...</p>
-                    <p><span class="fl"><a href='/html/news/gongsi/'>公司新闻</a></span><span class="gz"><script src="/plus/count.php?view=yes&aid=17&mid=1" type='text/javascript' language="javascript"></script></span><span class="sj">2016-01-28</span></p>
+                    <p><span class="fl"><a href='/html/news/gongsi/'>公司新闻</a></span><span class="gz"></span><span class="sj">2016-01-28</span></p>
                   </article>
                 </figure>
                 <figure class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                   <article class="ny-news"><a href="#" target="_blank" class="pull-left pic-link visible-lg"><span class="case-hover"><span class="hover-link"></span></span><img src="<?php echo get_theme_file_uri('/img/eng_sm1.jpg')?>" class="ylw-img-responsive2" alt="内容优化之有“心”创作"/></a>
                     <h4><a href="#" target="_blank">内容优化之有“心”创作</a></h4>
                     <p>什么是真正的原创文?小编认为，真正的原创文是作者自己内心的真切感悟或体会，能够体现作者独特风格，且来源于日常生活或工作中，能...</p>
-                    <p><span class="fl"><a href='/html/news/gongsi/'>公司新闻</a></span><span class="gz"><script src="/plus/count.php?view=yes&aid=3&mid=1" type='text/javascript' language="javascript"></script></span><span class="sj">2016-01-26</span></p>
+                    <p><span class="fl"><a href='/html/news/gongsi/'>公司新闻</a></span><span class="gz"></span><span class="sj">2016-01-26</span></p>
                   </article>
                 </figure>
                 <figure class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                   <article class="ny-news"><a href="#" target="_blank" class="pull-left pic-link visible-lg"><span class="case-hover"><span class="hover-link"></span></span><img src="<?php echo get_theme_file_uri('/img/eng_sm1.jpg')?>" class="ylw-img-responsive2" alt="企业网站首页呈现什么内容最"/></a>
                     <h4><a href="#" target="_blank">企业网站首页呈现什么内容最</a></h4>
                     <p>网站首页就是网站的门面，是首先展示给用户的页面，也是搜索蜘蛛来得最勤的地方，所以首页的内容很重要，一定要能吸引用户的兴趣，...</p>
-                    <p><span class="fl"><a href='/html/news/gongsi/'>公司新闻</a></span><span class="gz"><script src="/plus/count.php?view=yes&aid=17&mid=1" type='text/javascript' language="javascript"></script></span><span class="sj">2016-01-28</span></p>
+                    <p><span class="fl"><a href='/html/news/gongsi/'>公司新闻</a></span><span class="gz"></span><span class="sj">2016-01-28</span></p>
                   </article>
                 </figure>
                 <figure class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                   <article class="ny-news"><a href="#" target="_blank" class="pull-left pic-link visible-lg"><span class="case-hover"><span class="hover-link"></span></span><img src="<?php echo get_theme_file_uri('/img/eng_sm1.jpg')?>" class="ylw-img-responsive2" alt="内容优化之有“心”创作"/></a>
                     <h4><a href="#" target="_blank">内容优化之有“心”创作</a></h4>
                     <p>什么是真正的原创文?小编认为，真正的原创文是作者自己内心的真切感悟或体会，能够体现作者独特风格，且来源于日常生活或工作中，能...</p>
-                    <p><span class="fl"><a href='/html/news/gongsi/'>公司新闻</a></span><span class="gz"><script src="/plus/count.php?view=yes&aid=3&mid=1" type='text/javascript' language="javascript"></script></span><span class="sj">2016-01-26</span></p>
+                    <p><span class="fl"><a href='/html/news/gongsi/'>公司新闻</a></span><span class="gz"></span><span class="sj">2016-01-26</span></p>
                   </article>
                 </figure>
           
