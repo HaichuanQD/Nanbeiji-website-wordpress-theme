@@ -59,9 +59,13 @@
           </div>
           <div id="navbar" class="collapse navbar-collapse navbar-right">
             <ul class="nav navbar-nav">
+            <?php 
+            $categories = get_the_category();
+            $category_parent_id = $categories[0]->category_parent;
+            $category_id = $categories[0]->cat_ID; ?>
               <li class="<?php if (is_home()) echo 'active'; ?>"><a href="<?php echo get_site_url()?>">主&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
               <li class="<?php if (is_page('about')) echo 'active'; ?>"><a href="<?php echo get_site_url(null,'/about/')?>">关于我们</a></li>
-              <li class="<?php if (is_page('portfolio')) echo 'active'; ?>"><a href="<?php echo get_site_url(null,'/portfolio/')?>">作品案例</a></li>
+              <li class="<?php if (is_page('portfolio') or ($category_parent_id==2 and !is_home()) ) echo 'active'; ?>"><a href="<?php echo get_site_url(null,'/portfolio/') ?>">作品案例</a></li>
               <li class="<?php if (is_page('news')) echo 'active'; ?>"><a href="<?php echo get_site_url(null,'/news/')?>">新闻动态</a></li>
               <li class="<?php if (is_page('contact')) echo 'active'; ?>"><a href="<?php echo get_site_url(null,'/contact/')?>">联系我们</a></li>
             </ul>

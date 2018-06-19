@@ -267,7 +267,7 @@
                   </a></li>
                 </ul>
               </div>
-              <a class="btn btn-default" href="/portfolio/#tab_ios">更多室内案例</a>  
+              <a class="btn btn-default" href="<?php echo site_url('/portfolio/#tab_interior')?>">更多室内案例</a>  
               </div>
             </div>
             <div class="col-md-4 col-sm-6">
@@ -293,7 +293,7 @@
                   <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="<?php echo get_theme_file_uri('/img/exterior_sm3.jpg')?>" alt="..."></figure></a></li>
                 </ul>
               </div>
-              <button class="btn btn-default ">更多室外案例</button>  
+              <a class="btn btn-default" href="<?php echo site_url('/portfolio/#tab_exterior')?>">更多室外案例</a>  
               </div>
             </div>
             <div class="col-md-4 col-sm-6">
@@ -319,7 +319,7 @@
                   <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="<?php echo get_theme_file_uri('/img/industry_sm3.jpg')?>" alt="..."></figure></a></li>
                 </ul>
               </div>
-              <a class="btn btn-default">更多工业案例</a>  
+              <a class="btn btn-default" href="<?php echo site_url('/portfolio/#tab_industry')?>">更多工业案例</a>  
               </div>
             </div>
             
@@ -354,7 +354,7 @@
                     <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="<?php echo get_theme_file_uri('/img/product_sm3.jpg')?>" alt="..."></figure></a></li>
                 </ul>
               </div>
-              <button class="btn btn-default ">更多产品案例</button>  
+              <a class="btn btn-default" href="<?php echo site_url('/portfolio/#tab_product')?>">更多产品案例</a>  
               </div>
             </div>
             <div class="col-md-4 col-sm-6">
@@ -380,7 +380,7 @@
                     <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="<?php echo get_theme_file_uri('/img/eng_sm2.jpg')?>" alt="..."></figure></a></li>
                 </ul>
               </div>
-              <button class="btn btn-default ">更多产品案例</button>  
+              <a class="btn btn-default" href="<?php echo site_url('/portfolio/#tab_engine')?>">更多工程案例</a>  
               </div>
             </div>
             <div class="col-md-4 col-sm-6">
