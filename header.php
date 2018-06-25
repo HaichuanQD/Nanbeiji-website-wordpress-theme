@@ -18,19 +18,19 @@
     background-image: url("<?php echo get_theme_file_uri('/img/1.jpg')?>");}
 
     .about_banner{
-    background: url("<?php echo get_theme_file_uri('/img/banner_1.jpg')?>");
+    background-image: url("<?php echo get_theme_file_uri('/img/banner_1.jpg')?>");
     }
 
     .portfolio_banner{
-        background: url("<?php echo get_theme_file_uri('/img/banner_2.jpg')?>");
+        background-image: url("<?php echo get_theme_file_uri('/img/banner_2.jpg')?>");
     }
 
     .contact_banner{
-        background: url("<?php echo get_theme_file_uri('/img/banner_3.jpg')?>");
+        background-image: url("<?php echo get_theme_file_uri('/img/banner_3.jpg')?>");
     }
 
     .news_banner{
-        background: url("<?php echo get_theme_file_uri('/img/banner_4.jpg')?>");
+        background-image: url("<?php echo get_theme_file_uri('/img/banner_4.jpg')?>");
     }
 
 

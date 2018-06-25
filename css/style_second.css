@@ -3,10 +3,8 @@
 .s_banner{
     width: 100%;
     height:300px;
-
-    background-position:center;
-    background-repeat: repeat-x;
-    background-size: 2560px 100%;
+    background-size:cover;
+    background-position:50%,50%;
 
 }
 
@@ -292,7 +290,9 @@ border-radius: 6px;
     margin-bottom:50px;
 }
 
-
+.noline{
+    border:none !important;
+}
 @media only screen and (min-width:1200px) {}
 
 @media only screen and (max-width:1199px) {
@@ -365,6 +365,13 @@ border-radius: 6px;
 
 
 @media(max-width:767px){
+    .s_banner{
+        height: 100px;
+    }
+    .second_title{
+        font-size:150%;
+        margin:37px 10px 37px 0;
+    }
     .main_news_thumbs_container{
         height:160px;
         margin-bottom:30px;
@@ -405,5 +412,17 @@ border-radius: 6px;
     }
     .cat_titles a{
         margin-left:45% !important;
+    }
+    .noline{
+        display: none;
+    }
+    .breadcrumb{
+        font-size:95%;
+    }
+    #myTab li a{
+        font-size:100%;
+    }
+    .portfolio_cases_title{
+        font-size:100%;
     }
 }
