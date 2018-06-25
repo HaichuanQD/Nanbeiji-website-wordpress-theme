@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <?php wp_head();?>
 <title><?php bloginfo('name');?></title>
-<style>
+<style>/*背景信息从CSS文件提取出来，改为动态的*/
    .lunbo1{
     background-image: url("<?php echo get_theme_file_uri('/img/p1.png')?>");}
 
@@ -28,6 +28,11 @@
     .contact_banner{
         background: url("<?php echo get_theme_file_uri('/img/banner_3.jpg')?>");
     }
+
+    .news_banner{
+        background: url("<?php echo get_theme_file_uri('/img/banner_4.jpg')?>");
+    }
+
 
 
 </style>
