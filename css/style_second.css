@@ -72,3 +72,17 @@
     padding-top: 26px;
     padding-bottom: 20px;
 }
+
+.portfolio_cases_container{
+    margin-top:60px;
+
+}
+
+.portfolio_cases_title{
+    font-size:80%;
+    margin: 10px 0;
+}
+
+.cases_container_portfolio{
+    margin-bottom:40px;
+}
