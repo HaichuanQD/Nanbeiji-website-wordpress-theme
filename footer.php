@@ -90,8 +90,8 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-            <h3>青岛南北极效果图工作室</h3>
-              <p style="padding-right:20px;line-height:2;">青岛南北极效果图工作室成立注册于二零零四年三月，多年来一直从事于三维效果图专业技术的表现，潜心贯注空间、造型、色彩、文化，一直追求创作同艺术的不断提升。</p>
+            <h3>青岛汇新慧艺效果图工作室</h3>
+              <p style="padding-right:20px;line-height:2;">青岛汇新慧艺效果图工作室始创于二零零四年三月，多年来一直从事于三维效果图专业技术的表现，潜心贯注空间、造型、色彩、文化，一直追求创作同艺术的不断提升。</p>
           </div> 
           
           <div class="col-sm-2">
@@ -115,7 +115,7 @@
     </div>
     <hr>
     <div class="footer-bottom">
-         <p class="text-center">© 2018 Copyright:<a href="#"><strong>青岛南北极</strong></a></p>  
+         <p class="text-center">© 2018 Copyright:<a href="<?php echo get_site_url()?>"><strong>青岛汇新慧艺</strong></a></p>  
     </div>
   </div>
     </footer>
@@ -129,5 +129,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
 
     <?php wp_footer(); ?>
+
   </body>
 </html>

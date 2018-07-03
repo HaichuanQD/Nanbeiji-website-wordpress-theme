@@ -49,7 +49,7 @@
                       
                       <img class="main1_ani_11" data-animation-in="fadeIn" data-delay-in="0.1" src="<?php echo get_theme_file_uri('/img/p4_title.png')?>" alt="选择我们">
                       <img class="main1_ani_12" data-animation-in="fadeIn" data-delay-in="0.1" src="<?php echo get_theme_file_uri('/img/p4_building.png')?>" alt="效果图">
-                      <a   href="#"><img class="main1_ani_15" src="<?php echo get_theme_file_uri('/img/p4_btn.png')?>" alt="作品案例"></a>
+                      <a   href="<?php echo site_url('/portfolio')?>"><img class="main1_ani_15" src="<?php echo get_theme_file_uri('/img/p4_btn.png')?>" alt="作品案例"></a>
                       <img class="main1_ani_16" data-animation-in="fadeIn" data-delay-in="0.1" src="<?php echo get_theme_file_uri('/img/p4_tip.png')?>" alt="效果图">
                         
                     </div>
@@ -139,20 +139,20 @@
       
       
       <section id="about">
-        <h1 class="text-center" style="color:#2d98da;">青岛南北极效果图，欢迎您！</h1>
+        <h1 class="text-center" style="color:#2d98da;">青岛汇新慧艺效果图，欢迎您！</h1>
         <h2 class="text-center" style="margin-bottom:90px;color:#2d98da;">Welcome to the website of Qingdao Nanbeiji Visual Studio!</h2>
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 text-right">
-                    <h3>关于南北极</h3>
+                    <h3>关于汇新慧艺</h3>
                     <div class="line_container_h">
                       <div class="line_solid"></div>
                     </div>
-                    <p class="text-left" data-aos="fade-right" data-aos-duration="800">青岛南北极效果图工作室是一家专注于各类效果图展示表现的技术型工作室。<strong>主营家装，工装效果图设计制作，室外建筑，工程，展览展示效果图制作，工程机械产品等效果图展示制作，以及平面图，电路消防，等各类工程用图的制图，设计服务。</strong></p>
+                    <p class="text-left" data-aos="fade-right" data-aos-duration="800">青岛汇新慧艺效果图工作室是一家专注于各类效果图展示表现的技术型工作室。<strong>主营家装，工装效果图设计制作，室外建筑，工程，展览展示效果图制作，工程机械产品等效果图展示制作，以及平面图，电路消防，等各类工程用图的制图，设计服务。</strong></p>
 
                       <p class="text-left" data-aos="fade-right" data-aos-duration="800">工作室成立于2004年3月，位于青岛市市南区。自成立以来，为各个行业的众多客户提供了优质、快捷、经济的服务。相当多的客户与我们形成了良好的长期合作关系。
                                            
-                      <p class="text-right" data-aos="fade-right" data-aos-duration="800">青岛南北极，期待与您的合作!<br>咨询热线：<strong>15610002502</strong></p>
+                      <p class="text-right" data-aos="fade-right" data-aos-duration="800">青岛汇新慧艺，期待与您的合作!<br>咨询热线：<strong>15610002502</strong></p>
                         <div class="line_container_h">
                             <div class="line_solid"></div>
                           </div>
@@ -222,7 +222,7 @@
             <div class="col-sm-12">
               <div class="background_container">
                <div class="slogantext_container" data-aos="fade-up">
-                <h3>青岛南北极 懂您想要的效果</h3>
+                <h3>青岛汇新慧艺 懂您想要的效果</h3>
                </div>
               </div>
             </div>
@@ -325,7 +325,7 @@
             
         <div class="telephoneincases col-sm-12 hidden-sm" style="margin:80px 0 80px 0;">  
         <h3 class="text-center" style="font-size:150%;color:rgb(141, 141, 141);line-height:1.6;">
-          咨询电话：156-1000-2502<br>青岛南北极随时恭候您的垂询</h3><div class="line_container_h">
+          咨询电话：156-1000-2502<br>青岛汇新慧艺随时恭候您的垂询</h3><div class="line_container_h">
         
           <div class="line_solid"></div>
         </div></div>

@@ -60,7 +60,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/"><img src="<?php echo get_theme_file_uri('/img/logo.png')?>" alt="nanbeiji logo"></a>
+            <a class="navbar-brand" href="<?php echo get_site_url()?>"><img src="<?php echo get_theme_file_uri('/img/logo.png')?>" alt="nanbeiji logo"></a>
           </div>
           <div id="navbar" class="collapse navbar-collapse navbar-right">
             <ul class="nav navbar-nav">
@@ -71,7 +71,7 @@
               <li class="<?php if (is_home()) echo 'active'; ?>"><a href="<?php echo get_site_url()?>">主&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
               <li class="<?php if (is_page('about')) echo 'active'; ?>"><a href="<?php echo get_site_url(null,'/about/')?>">关于我们</a></li>
               <li class="<?php if (is_page('portfolio') or ($category_parent_id==2 and !is_home()) ) echo 'active'; ?>"><a href="<?php echo get_site_url(null,'/portfolio/') ?>">作品案例</a></li>
-              <li class="<?php if (is_page('news')) echo 'active'; ?>"><a href="<?php echo get_site_url(null,'/news/')?>">新闻动态</a></li>
+              <li class="<?php if (is_page('news') or ($category_parent_id==18 and !is_home()) ) echo 'active'; ?>"><a href="<?php echo get_site_url(null,'/news/')?>">新闻动态</a></li>
               <li class="<?php if (is_page('contact')) echo 'active'; ?>"><a href="<?php echo get_site_url(null,'/contact/')?>">联系我们</a></li>
             </ul>
           </div><!--/.nav-collapse -->

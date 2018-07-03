@@ -1,11 +1,18 @@
+     
+
+
+
 $(document).ready(function(){
       /*$('.swiper-wrapper').on('init', function(slick) {
             $('.swiper-wrapper').css("visibility","visible");
             $('.swiper-wrapper').css("opacity","1");
         })*/
-      
-      
-
+        jQuery('.content, .sidebar').theiaStickySidebar({
+          // Settings
+          additionalMarginTop: 30
+        });
+          
+      $('.cat-item').addClass('list-group-item');
       $('.swiper-wrapper').slick({
         dots: true,
         infinite: true,
@@ -127,6 +134,23 @@ $(document).ready(function(){
       }
       
     ]
+
+});
+
+$('.latestinnetslider').slick({
+  
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  speed:500,
+  touchThreshold:100,
+
+  draggable:true,
+  pauseOnHover:true,
+  prevArrow: $('.news_customprev2'),
+  nextArrow: $('.news_customnext2'),
+
+  
 
 });
 

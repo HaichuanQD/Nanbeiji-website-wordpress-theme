@@ -36,6 +36,40 @@ a[href^=tel] {
     text-decoration: none;
 }
 
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+/*sticky core*/
+
+.sidebar{
+    will-change: min-height;
+}
+
+.sidebar__inner{
+    transform: translate(0, 0); /* For browsers don't support translate3d. */
+    transform: translate3d(0, 0, 0);
+    will-change: position, transform;
+}
+
+
 .slick-slide {
     outline: none !important;
     }
@@ -224,11 +258,11 @@ a[href^=tel] {
 /*--轮播p1---*/
 .main1_ani_01 {
     position: absolute;
-    top:10%;
+    top:8%;
     left:50%;
-    width: 300px;
+    width: 400px;
     height: auto;
-    margin-left:-150px; 
+    margin-left:-200px; 
 }
 .main1_ani_02 {
     position: absolute;
@@ -1245,11 +1279,11 @@ a img.aligncenter {
     /*--轮播p1---*/
 .main1_ani_01 {
     position: absolute;
-    top:10%;
+    top:16%;
     left:50%;
-    width: 240px;
+    width: 500px;
     height: auto;
-    margin-left:-120px; 
+    margin-left:-250px; 
 }
 .main1_ani_02 {
     position: absolute;

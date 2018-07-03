@@ -81,21 +81,49 @@
             </span>
             </div>
             </a>
-
+              <div class="same_height" >
               <div class="latest_news_title">
                 <a href="#">如何更方便的进行亮贴图狗眼好及1 </a> 
               </div>
               <div class="latest_news_cat">
                 三维技法，原创文章
               </div>
+                </div>
               <div class="latest_news_hint">
                   住老美消究理反书认土，安关就又济备得学最，与切4家命即我自。 间近确标事去住老美消究理反书认土，安关就又济备得学最，与切4家命即我自。 间近确标事去...
                   
               </div>
-              <div class="latest_news_author">
+              <div class="latest_news_author_1">
                   <a href="#" class="btn btn-default">阅读更多</a>作者：海川 发布于：18-06-23
               </div>
-              
+             
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="latest_news_container">
+            <a href="#">
+            <div class="latest_news_thumbs_container" style="background-image:url(<?php echo get_theme_file_uri('/img/uvw.png')?>)">
+            <span class="case-hover">
+                <span class="hover-link"></span>
+            </span>
+            </div>
+            </a>
+              <div class="same_height" >
+              <div class="latest_news_title" style='display: inline-block;'>
+                <a href="#">如何更方便的进行亮贴图狗眼好及1飞哥来掩体哦哦哦 </a> 
+              </div>
+              <div class="latest_news_cat">
+                三维技法，原创文章
+              </div>
+                </div>
+              <div class="latest_news_hint">
+                  住老美消究理反书认土，安关就又济备得学最，与切4家命即我自。 间近确标事去住老美消究理反书认土，安关就又济备得学最，与切4家命即我自。 间近确标事去...
+                  
+              </div>
+              <div class="latest_news_author_1">
+                  <a href="#" class="btn btn-default">阅读更多</a>作者：海川 发布于：18-06-23
+              </div>
+             
             </div>
           </div>
           

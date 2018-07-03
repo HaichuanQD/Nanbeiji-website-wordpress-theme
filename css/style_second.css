@@ -205,7 +205,6 @@ border-radius: 6px;
 .latest_news_title{
     font-size:100%;
     font-weight: 800;
-    padding-top:16px;   
 
 }
 
@@ -213,8 +212,13 @@ border-radius: 6px;
     font-size:70%;
     font-weight: 800;
     color: #2d98da;
-    padding-bottom:16px;
-    border-bottom:1px solid #dfdfdf;
+
+}
+
+.same_height{
+    height: 75px;
+    vertical-align: middle;
+    padding-top: 8px;
 }
 
 .latest_news_hint{
@@ -225,11 +229,26 @@ border-radius: 6px;
     border-bottom:1px solid #dfdfdf;
 }
 
-.latest_news_author{
+.latest_news_author_1{
     padding-top:16px;
     font-size:70%;
     color:#92caec;
-    text-align: left;
+    text-align: right;
+}
+
+
+
+.media{
+    position: relative;
+}
+
+.latest_news_author{
+    position: absolute;
+    font-size:70%;
+    color:#92caec;
+    float: right;
+    bottom:20px;
+    right:20px;
 }
 
 .latest_news_container{
@@ -239,7 +258,7 @@ border-radius: 6px;
     margin-bottom:50px;
 }
 
-.latest_news_author .btn{
+.latest_news_author_1 .btn{
     margin-right:40px;
 }
 
@@ -293,6 +312,68 @@ border-radius: 6px;
 .noline{
     border:none !important;
 }
+
+.news_thumbnails_wrapper{
+    width:100%;
+}
+.news_thumbnails_wrapper img{
+    width:100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top:30px;
+    margin-bottom: 10px;
+}
+
+.news_page{
+    padding-top:50px;
+}
+
+.news_title_layout h2{
+    font-size:150%;
+    font-weight: 800;
+    margin-top:8px;
+}
+
+.author_dates h3{
+    font-size:70%;
+    margin-top:22px;
+    color:#acacac;
+}
+.newscontent{
+    font-size:75%;
+    line-height: 2.0;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.relatedthumbnail{
+    width:150px;
+    height:90px;
+    background-size: cover;
+    background-position: center,center;
+}
+
+.relatedinnerthumbnail{
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center,center;
+}
+
+.latestinnetslider{
+    height:380px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
+}
+
+.latestinnetslider.slick-initialized{
+	visibility:visible;
+	opacity:1;
+}
+
+
 @media only screen and (min-width:1200px) {}
 
 @media only screen and (max-width:1199px) {
@@ -312,7 +393,7 @@ border-radius: 6px;
     .latest_news_author{
         font-size:60%;
     }
-    .latest_news_author .btn{
+    .latest_news_author_1 .btn{
         margin-right:10px;
     }
     .cat_titles a{

@@ -22,7 +22,10 @@
         wp_enqueue_script('js_slick-animation_load',get_theme_file_uri('/js/slick-animation.js'),NULL,'0.3.3',true);
         wp_enqueue_script('js_lightbox_load',get_theme_file_uri('/js/lightbox.js'),NULL,'2.10.0',true);
         wp_enqueue_script('js_aos_load',get_theme_file_uri('/js/aos.js'),NULL,'1.0.0',true);
+        wp_enqueue_script('js_sticky_load',get_theme_file_uri('/js/theia-sticky-sidebar.js'),NULL,'1.0.0',true);
+        wp_enqueue_script('js_Resize_load',get_theme_file_uri('/js/ResizeSensor.js'),NULL,'1.0.0',true);
         wp_enqueue_script('js_script_load',get_theme_file_uri('/js/script.js'),NULL,'1.0.0',true);
+        
         
     }
 
