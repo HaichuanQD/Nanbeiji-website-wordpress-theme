@@ -110,7 +110,7 @@ $(document).ready(function(){
     slidesToShow: 3,
     draggable:true,
     pauseOnHover:true,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     prevArrow: $('.news_customprev2'),
     nextArrow: $('.news_customnext2'),
     responsive: [
@@ -118,7 +118,7 @@ $(document).ready(function(){
         breakpoint:992,
         settings:{
           pauseOnHover: false,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           slidesToShow: 2,
 
         }

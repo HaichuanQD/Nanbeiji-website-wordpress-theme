@@ -79,8 +79,7 @@
         
            <div class="newscontent"><?php the_content(); ?> </div>
 
-               <?php } /*大判断结束*/ ?>   
-               <?php } wp_reset_postdata(); /*本文循环结束*/ ?> 
+               
            <div class="col-md-12">
             <h2 class="cat_titles">相关推荐 </h2>
             <ul class="media-list main-list">
@@ -97,10 +96,12 @@
             while ($related->have_posts()){
                                 $related->the_post(); ?>
             
-              <li class="media"><a class='pull-left' href='<?php the_permalink(); ?>' style="margin-right:10px;"><div class='relatedthumbnail' style='background-image: url(<?php if ( has_post_thumbnail() ) { the_post_thumbnail_url( 'large' ); } ?>)'>
-            </div></a>
+              <li class="media"><a class='pull-left' href='<?php the_permalink(); ?>' style="margin-right:10px;"><div class='relatedthumbnail' style='background-image: url(<?php if ( has_post_thumbnail() ) { the_post_thumbnail_url( 'large' ); } ?>);position:relative;'>
+              <span class="case-hover">
+                <span class="hover-link"></span>
+            </span></div></a>
           
-                        <div class="cat_news_title">
+                        <div class="cat_news_title related_cat">
                           <a href="<?php the_permalink(); ?>"><?php the_title(); ?> </a>
                         </div>
                         <div class="cat_news_cat">
@@ -114,8 +115,8 @@
         };  
         echo implode( ' , ', $show_cat2 ); ?>
                         </div>   
-                        <div class="latest_news_author" >
-                        <?php echo '作者：' ; the_author(); echo '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' ; echo '发布于：';  echo get_the_date(); ?>
+                        <div class="latest_news_author" style="font-size:60%; right:5px; bottom:12px" >
+                        <?php echo '作者：' ; the_author(); echo '<span class="visible-xs-inline"><br></span>' ;echo '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' ; echo '发布于：';  echo get_the_date(); ?>
                         </div>
                         </li>
               
@@ -150,8 +151,10 @@
                                   $latestinner->the_post(); ?>
 
                                   <?php if ( $i<=3 ) { ?>
-                                    <li class="media"><a class='pull-left' href='<?php the_permalink(); ?>' style="margin-right:px;"><div class='relatedinnerthumbnail' style='background-image: url(<?php if ( has_post_thumbnail() ) { the_post_thumbnail_url( 'large' ); } ?>)'>
-            </div></a>
+                                    <li class="media"><a class='pull-left' href='<?php the_permalink(); ?>' style="margin-right:px;"><div class='relatedinnerthumbnail' style='background-image: url(<?php if ( has_post_thumbnail() ) { the_post_thumbnail_url( 'large' ); } ?>);position:relative;'>
+                                    <span class="case-hover">
+                <span class="hover-link"></span>
+            </span></div></a>
           
                         <div class="cat_news_title" style="font-size:75%;font-weight:800;">
                           <a href="<?php the_permalink(); ?>"><?php the_title(); ?> </a>
@@ -168,7 +171,7 @@
         echo implode( ' , ', $show_cat2 ); ?>
                         </div>   
                         <div class="latest_news_author" style="font-size:60%; right:5px; bottom:12px" >
-                        <?php echo '作者：' ; the_author(); echo '&nbsp;&nbsp;&nbsp;' ; echo '发布于：';  echo get_the_date(); ?>
+                        <?php echo '作者：' ; the_author(); echo '<span class="visible-xs-inline"><br></span>' ;echo '&nbsp;&nbsp;&nbsp;' ; echo '发布于：';  echo get_the_date(); ?>
                         </div>
                         </li>
 
@@ -195,8 +198,10 @@
                                   $latestinner->the_post(); ?>
 
                                   <?php if ( $i<=6 && $i>3 ) { ?>
-                                    <li class="media"><a class='pull-left' href='<?php the_permalink(); ?>' style="margin-right:px;"><div class='relatedinnerthumbnail' style='background-image: url(<?php if ( has_post_thumbnail() ) { the_post_thumbnail_url( 'large' ); } ?>)'>
-            </div></a>
+                                    <li class="media"><a class='pull-left' href='<?php the_permalink(); ?>' style="margin-right:px;"><div class='relatedinnerthumbnail' style='background-image: url(<?php if ( has_post_thumbnail() ) { the_post_thumbnail_url( 'large' ); } ?>);position:relative;'>
+                                    <span class="case-hover">
+                <span class="hover-link"></span>
+            </span></div></a>
           
                         <div class="cat_news_title" style="font-size:75%;font-weight:800;">
                           <a href="<?php the_permalink(); ?>"><?php the_title(); ?> </a>
@@ -213,7 +218,7 @@
         echo implode( ' , ', $show_cat2 ); ?>
                         </div>   
                         <div class="latest_news_author" style="font-size:60%; right:5px; bottom:12px" >
-                        <?php echo '作者：' ; the_author(); echo '&nbsp;&nbsp;&nbsp;' ; echo '发布于：';  echo get_the_date(); ?>
+                        <?php echo '作者：' ; the_author(); echo '<span class="visible-xs-inline"><br></span>' ;echo '&nbsp;&nbsp;&nbsp;' ; echo '发布于：';  echo get_the_date(); ?>
                         </div>
                         </li>
 
@@ -237,7 +242,8 @@
   </div>
             
     </section>
-
+    <?php } /*大判断结束*/ ?>   
+               <?php } wp_reset_postdata(); /*本文循环结束*/ ?> 
 
 <?php 
 get_footer();

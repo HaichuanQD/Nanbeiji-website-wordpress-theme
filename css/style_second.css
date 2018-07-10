@@ -219,6 +219,7 @@ border-radius: 6px;
     height: 75px;
     vertical-align: middle;
     padding-top: 8px;
+  
 }
 
 .latest_news_hint{
@@ -230,10 +231,10 @@ border-radius: 6px;
 }
 
 .latest_news_author_1{
-    padding-top:16px;
+    padding-top:14px;
     font-size:70%;
     color:#92caec;
-    text-align: right;
+    text-align: left;
 }
 
 
@@ -259,11 +260,11 @@ border-radius: 6px;
 }
 
 .latest_news_author_1 .btn{
-    margin-right:40px;
+    margin-right:10px;
 }
 
 .main_news_author .btn{
-    margin-right:60px;
+    margin-right:40px;
 }
 
 .latest_newsslider {
@@ -373,6 +374,10 @@ border-radius: 6px;
 	opacity:1;
 }
 
+.pagination{
+    font-size:75%;
+}
+
 
 @media only screen and (min-width:1200px) {}
 
@@ -393,6 +398,11 @@ border-radius: 6px;
     .latest_news_author{
         font-size:60%;
     }
+    .latest_news_author_1{
+        padding-top: 10px;
+    }
+
+
     .latest_news_author_1 .btn{
         margin-right:10px;
     }
@@ -441,6 +451,7 @@ border-radius: 6px;
     .cat_titles a{
         margin-left:75% !important;
     }
+  
 }
 
 
@@ -505,5 +516,18 @@ border-radius: 6px;
     }
     .portfolio_cases_title{
         font-size:100%;
+    }
+      
+    .relatedthumbnail{
+        width:100px;
+        height: 100px;
+    }
+
+    .related_cat{
+        font-size:75%;
+    }
+
+    .latest_news_author{
+        text-align: right;
     }
 }

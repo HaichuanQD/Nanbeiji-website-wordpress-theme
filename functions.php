@@ -1,4 +1,7 @@
 <?php 
+
+    // Register Custom Navigation Walker
+    require_once('wp_bootstrap_pagination.php');
     add_theme_support( 'post-thumbnails' ); 
 
     function remove_admin_login_header() {

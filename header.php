@@ -4,8 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='shortcut icon' type='image/x-icon' href='<?php echo get_theme_file_uri('/favicon.ico')?>' />
 <?php wp_head();?>
-<title><?php bloginfo('name');?></title>
+<title><?php 
+
+if (is_home()||is_search()) { bloginfo('name'); } 
+
+else{wp_title(''); echo ' | '; bloginfo('name');} 
+
+?> </title>
 <style>/*背景信息从CSS文件提取出来，改为动态的*/
    .lunbo1{
     background-image: url("<?php echo get_theme_file_uri('/img/p1.png')?>");}
