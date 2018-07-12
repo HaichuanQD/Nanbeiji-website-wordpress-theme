@@ -1279,11 +1279,11 @@ a img.aligncenter {
     /*--轮播p1---*/
 .main1_ani_01 {
     position: absolute;
-    top:16%;
+    top:10%;
     left:50%;
-    width: 500px;
+    width: 350px;
     height: auto;
-    margin-left:-250px; 
+    margin-left:-175px; 
 }
 .main1_ani_02 {
     position: absolute;
@@ -1518,9 +1518,9 @@ a img.aligncenter {
         position: absolute;
         top:10%;
         left:50%;
-        width: 210px;
+        width: 280px;
         height: auto;
-        margin-left:-105px; 
+        margin-left:-140px; 
     }
     .main1_ani_02 {
         position: absolute;
@@ -1742,7 +1742,7 @@ a img.aligncenter {
         font-size: 90%;
     }
     .more_info{
-        width:70%;
+        width:70% !important;
         margin-left: 15%;
         margin-bottom:80px;
     }

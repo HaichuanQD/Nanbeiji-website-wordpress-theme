@@ -7,7 +7,7 @@ $(document).ready(function(){
             $('.swiper-wrapper').css("visibility","visible");
             $('.swiper-wrapper').css("opacity","1");
         })*/
-        jQuery('.content, .sidebar').theiaStickySidebar({
+        $('.content, .sidebar').theiaStickySidebar({
           // Settings
           additionalMarginTop: 30
         });

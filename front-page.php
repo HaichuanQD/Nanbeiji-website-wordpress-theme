@@ -140,7 +140,7 @@
       
       <section id="about">
         <h1 class="text-center" style="color:#2d98da;">青岛汇新慧艺效果图，欢迎您！</h1>
-        <h2 class="text-center" style="margin-bottom:90px;color:#2d98da;">Welcome to the website of Qingdao Nanbeiji Visual Studio!</h2>
+        <h2 class="text-center" style="margin-bottom:90px;color:#2d98da;">Welcome to the website of Qingdao Huixinhuiyi Visual Studio!</h2>
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 text-right">
