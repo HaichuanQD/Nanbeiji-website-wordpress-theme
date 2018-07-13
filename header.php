@@ -15,29 +15,29 @@ else{wp_title(''); echo ' | '; bloginfo('name');}
 ?> </title>
 <style>/*背景信息从CSS文件提取出来，改为动态的*/
    .lunbo1{
-    background-image: url("<?php echo get_theme_file_uri('/img/p1.png')?>");}
+    background-image: url("http://image.nanbeiji360.com/img/p1.png");}
 
    .case-hover:hover .hover-link, .tj-case figure div:hover .hover-link, .pic-link:hover .hover-link {
 
-    background-image: url("<?php echo get_theme_file_uri('/img/hover-link.png')?>");}
+    background-image: url("http://image.nanbeiji360.com/img/hover-link.png");}
     
     #slogan{
-    background-image: url("<?php echo get_theme_file_uri('/img/1.jpg')?>");}
+    background-image: url("http://image.nanbeiji360.com/img/1.jpg");}
 
     .about_banner{
-    background-image: url("<?php echo get_theme_file_uri('/img/banner_1.jpg')?>");
+    background-image: url("http://image.nanbeiji360.com/img/banner_1.jpg");
     }
 
     .portfolio_banner{
-        background-image: url("<?php echo get_theme_file_uri('/img/banner_2.jpg')?>");
+        background-image: url("http://image.nanbeiji360.com/img/banner_2.jpg");
     }
 
     .contact_banner{
-        background-image: url("<?php echo get_theme_file_uri('/img/banner_3.jpg')?>");
+        background-image: url("http://image.nanbeiji360.com/img/banner_3.jpg");
     }
 
     .news_banner{
-        background-image: url("<?php echo get_theme_file_uri('/img/banner_4.jpg')?>");
+        background-image: url("http://image.nanbeiji360.com/img/banner_4.jpg");
     }
 
 
@@ -67,7 +67,7 @@ else{wp_title(''); echo ' | '; bloginfo('name');}
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?php echo get_site_url()?>"><img src="<?php echo get_theme_file_uri('/img/logo.png')?>" alt="nanbeiji logo"></a>
+            <a class="navbar-brand" href="<?php echo get_site_url()?>"><img src="http://image.nanbeiji360.com/img/logo.png" alt="Huixinhuiyi logo"></a>
           </div>
           <div id="navbar" class="collapse navbar-collapse navbar-right">
             <ul class="nav navbar-nav">
