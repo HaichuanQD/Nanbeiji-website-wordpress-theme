@@ -23,20 +23,23 @@
 
     <section id="content">
       <div class="content_wrapper">
-        <article class="container">
+        <div class="container">
+                <div class="row">
                 <div class="text-center">
                         <h3 class="article_title">作品案例展示</h3>
                 </div>
-            <div class="row">
+            
                 <div class="col-xs-12 search_pics">
-                <form class="navbar-form navbar-right" role="search">
-                        <div class="form-group">
-                          <input type="text" class="form-control" placeholder="搜索本站案例">
-                        </div>
-                        <button type="submit" class="btn btn-default">搜索</button>
-                </form>
+                        <div class="input-group">
+                                <input type="text" class="form-control" placeholder="搜索本站案例">
+                                <span class="input-group-btn">
+                                  <button class="btn btn-default" type="button">搜索</button>
+                                </span>
+                              </div><!-- /input-group -->
             </div>
         </div>
+    </div>
+    <div class="container">
             <div class="row">
                 <ul id="myTab" class="nav nav-tabs nav-justified">
                         <li class="active">
@@ -65,7 +68,7 @@
                            
                             <div class="col-md-3 col-sm-6">
                                 <div class="cases_container_portfolio" data-aos="fade" data-aos-offset="-999">
-                                <figure class="overflowhidden main_case">   
+                                <figure class="overflowhidden main_case port_show">   
                                  <a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {
 	                              the_post_thumbnail('full',  array('class' => 'portfolio_thumbnails'));
                                  }  ?></a>
@@ -94,7 +97,7 @@
                            
                             <div class="col-md-3 col-sm-6">
                                 <div class="cases_container_portfolio" data-aos="fade" data-aos-offset="-999">
-                                <figure class="overflowhidden main_case">   
+                                <figure class="overflowhidden main_case port_show">   
                                  <a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {
 	                              the_post_thumbnail('full',  array('class' => 'portfolio_thumbnails'));
                                  }  ?></a>
@@ -123,7 +126,7 @@
                            
                             <div class="col-md-3 col-sm-6">
                                 <div class="cases_container_portfolio" data-aos="fade" data-aos-offset="-999">
-                                <figure class="overflowhidden main_case">   
+                                <figure class="overflowhidden main_case port_show">   
                                  <a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {
 	                              the_post_thumbnail('full',  array('class' => 'portfolio_thumbnails'));
                                  }  ?></a>
@@ -153,7 +156,7 @@
                            
                             <div class="col-md-3 col-sm-6">
                                 <div class="cases_container_portfolio" data-aos="fade" data-aos-offset="-999">
-                                <figure class="overflowhidden main_case">   
+                                <figure class="overflowhidden main_case port_show">   
                                  <a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {
 	                              the_post_thumbnail('full',  array('class' => 'portfolio_thumbnails'));
                                  }  ?></a>
@@ -183,7 +186,7 @@
                            
                             <div class="col-md-3 col-sm-6">
                                 <div class="cases_container_portfolio" data-aos="fade" data-aos-offset="-999">
-                                <figure class="overflowhidden main_case">   
+                                <figure class="overflowhidden main_case port_show">   
                                  <a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {
 	                              the_post_thumbnail('full',  array('class' => 'portfolio_thumbnails'));
                                  }  ?></a>
@@ -218,7 +221,7 @@
                            
                             <div class="col-md-3 col-sm-6">
                                 <div class="cases_container_portfolio" data-aos="fade" data-aos-offset="-999">
-                                <figure class="overflowhidden main_case">   
+                                <figure class="overflowhidden main_case port_show">   
                                  <a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {
 	                              the_post_thumbnail('full',  array('class' => 'portfolio_thumbnails'));
                                  }  ?></a>
@@ -246,8 +249,8 @@
                     </div>
                 </div>
                 
-        </article>
-      </div>
+            </div>
+      
     </section>
 
  

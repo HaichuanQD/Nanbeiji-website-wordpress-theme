@@ -243,7 +243,7 @@
               <a href="http://image.nanbeiji360.com/img/cases/interior1.jpg" data-toggle="tooltip" data-placement="bottom" title="点击查看大图" data-lightbox="interior" data-title="室内案例1（点击右方X或图片外深色区域以关闭）">
                 <div class="big_case_wrapper" style="position: relative;">
                   <figure class="overflowhidden main_case">      
-              <img class="cases_images" src="http://image.nanbeiji360.com/img/interior1.jpg" alt="...">
+              <img class="cases_images" src="http://image.nanbeiji360.com/img/interior1.jpg" alt="请刷新">
               </figure>
               <div class="case_enlarge_hint"><i class="ion-android-expand"></i></div>
             </div>
@@ -257,13 +257,13 @@
               <div class="sub_casepic">
                 <ul>
                   <li><a href="http://image.nanbeiji360.com/img/cases/interior_sm1.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="interior" data-title="室内案例2（点击右方X或图片外深色区域以关闭）">
-                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/interior_sm1.jpg" alt="..."></figure>
+                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/interior_sm1.jpg" alt="请刷新"></figure>
                   </a></li>
                   <li><a href="http://image.nanbeiji360.com/img/cases/interior_sm2.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="interior" data-title="室内案例3（点击右方X或图片外深色区域以关闭）">
-                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/interior_sm2.jpg" alt="..."></figure>
+                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/interior_sm2.jpg" alt="请刷新"></figure>
                   </a></li>
                   <li><a href="http://image.nanbeiji360.com/img/cases/interior_sm3.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="interior" data-title="室内案例4（点击右方X或图片外深色区域以关闭）">
-                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/interior_sm3.jpg" alt="..."></figure>
+                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/interior_sm3.jpg" alt="请刷新"></figure>
                   </a></li>
                 </ul>
               </div>
@@ -275,7 +275,7 @@
               <a href="http://image.nanbeiji360.com/img/cases/exterior1.jpg" data-toggle="tooltip" data-placement="bottom" title="点击查看大图" data-lightbox="exterior" data-title="室外案例1（点击右方X或图片外深色区域以关闭）">
                 <div class="big_case_wrapper" style="position: relative;">
                 <figure class="overflowhidden main_case">      
-              <img class="cases_images" src="http://image.nanbeiji360.com/img/exterior1.jpg" alt="...">
+              <img class="cases_images" src="http://image.nanbeiji360.com/img/exterior1.jpg" alt="请刷新">
               </figure><div class="case_enlarge_hint"><i class="ion-android-expand"></i></div></div></a>
               
               <div class="cases_box_text">
@@ -286,11 +286,11 @@
               <div class="sub_casepic">
                 <ul>
                   <li><a href="http://image.nanbeiji360.com/img/cases/exterior_sm1.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="exterior" data-title="室外案例2（点击右方X或图片外深色区域以关闭）">
-                  <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/exterior_sm1.jpg" alt="..."></figure></a></li>
+                  <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/exterior_sm1.jpg" alt="请刷新"></figure></a></li>
                   <li><a href="http://image.nanbeiji360.com/img/cases/exterior_sm2.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="exterior" data-title="室外案例3（点击右方X或图片外深色区域以关闭）">
-                  <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/exterior_sm2.jpg" alt="..."></figure></a></li>
+                  <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/exterior_sm2.jpg" alt="请刷新"></figure></a></li>
                   <li><a href="http://image.nanbeiji360.com/img/cases/exterior_sm3.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="exterior" data-title="室外案例4（点击右方X或图片外深色区域以关闭）">
-                  <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/exterior_sm3.jpg" alt="..."></figure></a></li>
+                  <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/exterior_sm3.jpg" alt="请刷新"></figure></a></li>
                 </ul>
               </div>
               <a class="btn btn-default" href="<?php echo site_url('/portfolio/#tab_exterior')?>">更多室外案例</a>  
@@ -301,7 +301,7 @@
               <a href="http://image.nanbeiji360.com/img/cases/industry1.jpg" data-toggle="tooltip" data-placement="bottom" title="点击查看大图" data-lightbox="industry" data-title="工业案例1（点击右方X或图片外深色区域以关闭）">
                 <div class="big_case_wrapper" style="position: relative;">
                 <figure class="overflowhidden main_case">      
-              <img class="cases_images" src="http://image.nanbeiji360.com/img/industry1.jpg" alt="...">
+              <img class="cases_images" src="http://image.nanbeiji360.com/img/industry1.jpg" alt="请刷新">
               </figure><div class="case_enlarge_hint"><i class="ion-android-expand"></i></div>
             </div>
           </a>
@@ -312,11 +312,11 @@
               <div class="sub_casepic">
                 <ul>
                   <li><a href="http://image.nanbeiji360.com/img/cases/industry_sm1.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="industry" data-title="工业案例2（点击右方X或图片外深色区域以关闭）">
-                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/industry_sm1.jpg" alt="..."></figure></a></li>
+                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/industry_sm1.jpg" alt="请刷新"></figure></a></li>
                   <li><a href="http://image.nanbeiji360.com/img/cases/industry_sm2.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="industry" data-title="工业案例3（点击右方X或图片外深色区域以关闭）">
-                  <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/industry_sm2.jpg" alt="..."></figure></a></li>
+                  <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/industry_sm2.jpg" alt="请刷新"></figure></a></li>
                   <li><a href="http://image.nanbeiji360.com/img/cases/industry_sm3.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="industry" data-title="工业案例4（点击右方X或图片外深色区域以关闭）">
-                  <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/industry_sm3.jpg" alt="..."></figure></a></li>
+                  <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/industry_sm3.jpg" alt="请刷新"></figure></a></li>
                 </ul>
               </div>
               <a class="btn btn-default" href="<?php echo site_url('/portfolio/#tab_industry')?>">更多工业案例</a>  
@@ -336,7 +336,7 @@
               
                 <div class="big_case_wrapper" style="position: relative;">
                     <figure class="overflowhidden main_case">     
-              <img class="cases_images" src="http://image.nanbeiji360.com/img/product1.jpg" alt="...">
+              <img class="cases_images" src="http://image.nanbeiji360.com/img/product1.jpg" alt="请刷新">
               </figure><div class="case_enlarge_hint"><i class="ion-android-expand"></i></div>
                 </div>
               </a>
@@ -347,11 +347,11 @@
               <div class="sub_casepic">
                 <ul>
                   <li><a href="http://image.nanbeiji360.com/img/cases/product_sm1.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="product" data-title="产品案例2（点击右方X或图片外深色区域以关闭）">
-                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/product_sm1.jpg" alt="..."></figure></a></li>
+                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/product_sm1.jpg" alt="请刷新"></figure></a></li>
                   <li><a href="http://image.nanbeiji360.com/img/cases/product_sm2.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="product" data-title="产品案例3（点击右方X或图片外深色区域以关闭）">
-                  <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/product_sm2.jpg" alt="..."></figure></a></li>
+                  <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/product_sm2.jpg" alt="请刷新"></figure></a></li>
                   <li><a href="http://image.nanbeiji360.com/img/cases/product_sm3.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="product" data-title="产品案例4（点击右方X或图片外深色区域以关闭）">
-                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/product_sm3.jpg" alt="..."></figure></a></li>
+                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/product_sm3.jpg" alt="请刷新"></figure></a></li>
                 </ul>
               </div>
               <a class="btn btn-default" href="<?php echo site_url('/portfolio/#tab_product')?>">更多产品案例</a>  
@@ -362,7 +362,7 @@
             <a href="http://image.nanbeiji360.com/img/cases/eng1.jpg" data-toggle="tooltip" data-placement="bottom" title="点击查看大图" data-lightbox="eng" data-title="工程案例1（点击右方X或图片外深色区域以关闭）">
               <div class="big_case_wrapper" style="position: relative;">
               <figure class="overflowhidden main_case">      
-              <img class="cases_images" src="http://image.nanbeiji360.com/img/eng1.jpg" alt="...">
+              <img class="cases_images" src="http://image.nanbeiji360.com/img/eng1.jpg" alt="请刷新">
             </figure><div class="case_enlarge_hint"><i class="ion-android-expand"></i></div>
           </div>
         </a>
@@ -373,11 +373,11 @@
               <div class="sub_casepic">
                 <ul>
                   <li><a href="http://image.nanbeiji360.com/img/cases/eng_sm1.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="eng" data-title="工程案例2（点击右方X或图片外深色区域以关闭）">
-                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/eng_sm1.jpg" alt="..."></figure></a></li>
+                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/eng_sm1.jpg" alt="请刷新"></figure></a></li>
                   <li><a href="http://image.nanbeiji360.com/img/cases/eng_sm3.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="eng" data-title="工程案例3（点击右方X或图片外深色区域以关闭）">
-                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/eng_sm3.jpg" alt="..."></figure></a></li>
+                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/eng_sm3.jpg" alt="请刷新"></figure></a></li>
                   <li><a href="http://image.nanbeiji360.com/img/cases/eng_sm2.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="eng" data-title="工程案例4（点击右方X或图片外深色区域以关闭）">
-                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/eng_sm2.jpg" alt="..."></figure></a></li>
+                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="http://image.nanbeiji360.com/img/eng_sm2.jpg" alt="请刷新"></figure></a></li>
                 </ul>
               </div>
               <a class="btn btn-default" href="<?php echo site_url('/portfolio/#tab_engine')?>">更多工程案例</a>  
@@ -386,7 +386,7 @@
             <div class="col-md-4 col-sm-6">
               <div class="cases_container" data-aos="fade-up">
               <figure class="overflowhidden main_case">      
-              <img class="cases_images" src="http://image.nanbeiji360.com/img/vr1.jpg" alt="...">
+              <img class="cases_images" src="http://image.nanbeiji360.com/img/vr1.jpg" alt="请刷新">
               </figure>
               <div class="cases_box_text">
                   <h3 class="text-center">VR&全景等全新展示模式</h3>
@@ -394,9 +394,9 @@
                 </div>
               <div class="sub_casepic">
                   <ul>
-                      <li><figure class="overflowhidden" style="height:87px;"><img class="cases_imagesvr" src="http://image.nanbeiji360.com/img/vr_sm3.jpg" alt="..."></figure></li>
-                      <li><figure class="overflowhidden" style="height:87px;"><img class="cases_imagesvr" src="http://image.nanbeiji360.com/img/vr_sm2.jpg" alt="..."></figure></li>
-                      <li><figure class="overflowhidden" style="height:87px;"><img class="cases_imagesvr" src="http://image.nanbeiji360.com/img/vr_sm1.jpg" alt="..."></figure></li>
+                      <li><figure class="overflowhidden" style="height:87px;"><img class="cases_imagesvr" src="http://image.nanbeiji360.com/img/vr_sm3.jpg" alt="请刷新"></figure></li>
+                      <li><figure class="overflowhidden" style="height:87px;"><img class="cases_imagesvr" src="http://image.nanbeiji360.com/img/vr_sm2.jpg" alt="请刷新"></figure></li>
+                      <li><figure class="overflowhidden" style="height:87px;"><img class="cases_imagesvr" src="http://image.nanbeiji360.com/img/vr_sm1.jpg" alt="请刷新"></figure></li>
                     </ul>
               </div>
               <button class="btn btn-default ">更多精彩案例</button>  

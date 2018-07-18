@@ -48,6 +48,8 @@
 
 .search_pics{
     padding:20px 0 20px 0;
+    padding-left:75%;
+    padding-right:5%;
 }
 
 #myTab li a{
@@ -416,6 +418,9 @@ border-radius: 6px;
     .cat_titles a{
         margin-left:65% !important;
     }
+    .port_show{
+        height: 141px;
+    }
 }
 
 @media only screen and (max-width:991px) {
@@ -458,7 +463,9 @@ border-radius: 6px;
     .cat_titles a{
         margin-left:75% !important;
     }
-  
+    .search_pics{
+        padding-left:65%;
+    }
 }
 
 
@@ -536,5 +543,9 @@ border-radius: 6px;
 
     .latest_news_author{
         text-align: right;
+    }
+
+    .search_pics{
+        padding-left:5%;
     }
 }
