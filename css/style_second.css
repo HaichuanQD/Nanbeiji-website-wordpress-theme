@@ -466,6 +466,9 @@ border-radius: 6px;
     .search_pics{
         padding-left:65%;
     }
+    .main_case{
+        height:auto;
+    }
 }
 
 
@@ -547,5 +550,8 @@ border-radius: 6px;
 
     .search_pics{
         padding-left:5%;
+    }
+    .main_case{
+        height:auto;
     }
 }
