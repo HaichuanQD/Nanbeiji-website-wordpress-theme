@@ -248,7 +248,7 @@ calc(layer[testmask].rotate, view.hlookat-layer[get(layer[testmask].parent)].ro)
                  
                  
            </layer>
-     <layer name="home" url="http://image.nanbeiji360.com/qdpoly/newskin/home.png" handcursor="true" onclick="openurl(http://localhost/wordpress,_self)" align="top" width="80" height="prop" y.mobile="130" scale.mobile="0.5" keep="true" alpha="0.7" enabled="true"/>
+     <layer name="home" url="http://image.nanbeiji360.com/qdpoly/newskin/home.png" handcursor="true" onclick="openurl(https://huixinhuiyi.com,_self)" align="top" width="80" height="prop" y.mobile="130" scale.mobile="0.5" keep="true" alpha="0.7" enabled="true"/>
      <layer name="watermark" url="http://image.nanbeiji360.com/qdpoly/newskin/BW.png" align="rightbottom" width="260" height="prop" y.mobile="130" scale.mobile="0.5" keep="true" alpha="0.7" enabled="false"/><!--LOGO水印-->
 
      <!--缩略图大母子-->
