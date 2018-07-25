@@ -62,13 +62,13 @@
         foreach((get_the_category()) as $category) { 
           if ($category->cat_ID==18 || $category->cat_ID==24 || $category->cat_ID==25) { } else { $catlink = get_category_link($category->cat_ID); $show_cat[]='<a class="cat_tags" href="'.$catlink.'">'.$category->cat_name.'</a>'; }
         } 
-        echo implode( ' , ', $show_cat );*/
+        echo implode( '&nbsp;&nbsp;', $show_cat );*/
         
         
         foreach ((get_categories($args1)) as $category) {
           $catlink = get_category_link($category->cat_ID); $show_cat[]='<a class="cat_tags" href="'.$catlink.'">'.$category->cat_name.'</a>';
         };  
-        echo implode( ' , ', $show_cat );
+        echo implode( '&nbsp;&nbsp;', $show_cat );
         ?></div>
         <div class="news_title_layout"><h2><?php the_title(); ?></h2></div>
         <div class="author_dates"><h3><?php echo '作者：' ; the_author(); echo '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' ; echo '发布于：';  echo get_the_date();echo '&nbsp;&nbsp;&nbsp;' ; the_time(); ?></h3></div>
@@ -113,7 +113,7 @@
                         foreach ((get_categories($args3)) as $category2) {
           $catlink2 = get_category_link($category2->cat_ID); $show_cat2[]='<a class="cat_tags" href="'.$catlink2.'">'.$category2->cat_name.'</a>';
         };  
-        echo implode( ' , ', $show_cat2 ); ?>
+        echo implode( '&nbsp;&nbsp;', $show_cat2 ); ?>
                         </div>   
                         <div class="latest_news_author" style="font-size:60%; right:5px; bottom:12px" >
                         <?php echo '作者：' ; the_author(); echo '<span class="visible-xs-inline"><br></span>' ;echo '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' ; echo '发布于：';  echo get_the_date(); ?>
@@ -168,7 +168,7 @@
                         foreach ((get_categories($args3)) as $category2) {
           $catlink2 = get_category_link($category2->cat_ID); $show_cat2[]='<a class="cat_tags" href="'.$catlink2.'">'.$category2->cat_name.'</a>';
         };  
-        echo implode( ' , ', $show_cat2 ); ?>
+        echo implode( '&nbsp;&nbsp;', $show_cat2 ); ?>
                         </div>   
                         <div class="latest_news_author" style="font-size:60%; right:5px; bottom:12px" >
                         <?php echo '作者：' ; the_author(); echo '<span class="visible-xs-inline"><br></span>' ;echo '&nbsp;&nbsp;&nbsp;' ; echo '发布于：';  echo get_the_date(); ?>
@@ -215,7 +215,7 @@
                         foreach ((get_categories($args3)) as $category2) {
           $catlink2 = get_category_link($category2->cat_ID); $show_cat2[]='<a class="cat_tags" href="'.$catlink2.'">'.$category2->cat_name.'</a>';
         };  
-        echo implode( ' , ', $show_cat2 ); ?>
+        echo implode( '&nbsp;&nbsp;', $show_cat2 ); ?>
                         </div>   
                         <div class="latest_news_author" style="font-size:60%; right:5px; bottom:12px" >
                         <?php echo '作者：' ; the_author(); echo '<span class="visible-xs-inline"><br></span>' ;echo '&nbsp;&nbsp;&nbsp;' ; echo '发布于：';  echo get_the_date(); ?>

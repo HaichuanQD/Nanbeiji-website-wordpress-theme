@@ -14,7 +14,8 @@
       <div class="container">
         <ol class="breadcrumb">
           <li><a href="\">主页</a></li>
-          <li class="active">作品案例</li>
+          <li><a href="<?php echo get_site_url(null,'/portfolio'); ?>">作品案例</a></li>
+          <li class="active">工程</li>
         </ol>
       </div>
     </div>
@@ -37,8 +38,8 @@
     <div class="container">
             <div class="row">
                 <ul id="myTab" class="nav nav-tabs nav-justified">
-                        <li class="active">
-                            <a href="#home" data-toggle="tab">
+                        <li>
+                            <a href="<?php echo get_site_url(null,'/portfolio'); ?>">
                                  综合精选
                             </a>
                         </li>
@@ -47,18 +48,18 @@
                         <li><a href="<?php echo get_category_link(13); ?>">工业</a></li>
                         <li><a href="<?php echo get_category_link(14); ?>">产品</a></li>
                         <li><a href="<?php echo get_category_link(15); ?>">工程</a></li>
-                        <li><a href="<?php echo get_category_link(17); ?>">其他</a></li>
+                        <li class="active"><a href="#others_p" data-toggle="tab">其他</a></li>
 
                     </ul>
                     <div id="myTabContent" class="tab-content">
-                        <div class="tab-pane fade in active" id="home">
+                        <div class="tab-pane fade in active" id="others_p">
                         <div class="portfolio_cases_container">
                             <div class="container">
                                 <div class"row">   
                         <?php 
                         $portfolio_page = get_query_var('paged');
                         $portfolio = new WP_Query(array( 
-                                'cat' => 16,    
+                                'cat' => 17,    
                                 'posts_per_page' => 12,
                                 'paged'=>$portfolio_page ));?>
                             <?php

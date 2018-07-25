@@ -96,11 +96,11 @@
           
           <div class="col-sm-2">
               <h3>快速链接</h3>
-              <p><a href="#">关于我们</a></p>
-              <p><a href="#">近期案例作品</a></p>
-              <p><a href="#">绘图技巧</a></p>
-              <p><a href="#">原创文章</a></p>
-              <p><a href="#">招聘英才</a></p>
+              <p><a href="<?php echo get_site_url(null,'/about/')?>">关于我们</a></p>
+              <p><a href="<?php echo get_site_url(null,'/portfolio/')?>">近期案例作品</a></p>
+              <p><a href="<?php echo get_category_link(21); ?>">绘图技巧</a></p>
+              <p><a href="<?php echo get_category_link(23); ?>">原创文章</a></p>
+              <p><a href="<?php echo get_site_url(null,'/contact/')?>">招聘英才</a></p>
           </div>
           <div class="col-sm-4">
               <h3>联系方式</h3>
@@ -115,7 +115,7 @@
     </div>
     <hr>
     <div class="footer-bottom">
-         <p class="text-center">© 2018 Copyright:<a href="<?php echo get_site_url()?>"><strong>青岛汇新慧艺</strong></a></p>  
+         <p class="text-center">© 2018 Copyright:<a href="<?php echo get_site_url()?>"><strong>青岛汇新慧艺</strong></a> <a href="http://www.miitbeian.gov.cn/">鲁ICP备18032998号</a></p>  
     </div>
   </div>
     </footer>

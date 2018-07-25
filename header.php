@@ -13,31 +13,43 @@ if (is_home()||is_search()) { bloginfo('name'); }
 else{wp_title(''); echo ' | '; bloginfo('name');} 
 
 ?> </title>
+<meta name="keywords" content="青岛效果图,青岛效果图制作,青岛效果图设计,效果图设计,效果图制作">
+<meta name="description" content="青岛效果图,青岛汇新慧艺效果图——您身边的制图专家,<?php 
+
+if (!is_home() AND !is_search()) { wp_title(''); } 
+
+
+
+?>">
 <style>/*背景信息从CSS文件提取出来，改为动态的*/
    .lunbo1{
-    background-image: url("http://image.nanbeiji360.com/img/p1.png");}
+    background-image: url("https://cdn.huixinhuiyi.com/img/p1.png");}
 
    .case-hover:hover .hover-link, .tj-case figure div:hover .hover-link, .pic-link:hover .hover-link {
 
-    background-image: url("http://image.nanbeiji360.com/img/hover-link.png");}
+    background-image: url("https://cdn.huixinhuiyi.com/img/hover-link.png");}
+
+    .case-hover:hover  .hover-link2, .tj-case figure div:hover  .hover-link2, .pic-link:hover  .hover-link2 {
+
+     background-image: url("https://cdn.huixinhuiyi.com/img/hover-link2.png");}
     
     #slogan{
-    background-image: url("http://image.nanbeiji360.com/img/1.jpg");}
+    background-image: url("https://cdn.huixinhuiyi.com/img/1.jpg");}
 
     .about_banner{
-    background-image: url("http://image.nanbeiji360.com/img/banner_1.jpg");
+    background-image: url("https://cdn.huixinhuiyi.com/img/banner_1.jpg");
     }
 
     .portfolio_banner{
-        background-image: url("http://image.nanbeiji360.com/img/banner_2.jpg");
+        background-image: url("https://cdn.huixinhuiyi.com/img/banner_2.jpg");
     }
 
     .contact_banner{
-        background-image: url("http://image.nanbeiji360.com/img/banner_3.jpg");
+        background-image: url("https://cdn.huixinhuiyi.com/img/banner_3.jpg");
     }
 
     .news_banner{
-        background-image: url("http://image.nanbeiji360.com/img/banner_4.jpg");
+        background-image: url("https://cdn.huixinhuiyi.com/img/banner_4.jpg");
     }
 
 
@@ -67,7 +79,7 @@ else{wp_title(''); echo ' | '; bloginfo('name');}
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?php echo get_site_url()?>"><img src="http://image.nanbeiji360.com/img/logo.png" alt="Huixinhuiyi logo"></a>
+            <a class="navbar-brand" href="<?php echo get_site_url()?>"><img src="https://cdn.huixinhuiyi.com/img/logo.png" alt="Huixinhuiyi logo"></a>
           </div>
           <div id="navbar" class="collapse navbar-collapse navbar-right">
             <ul class="nav navbar-nav">

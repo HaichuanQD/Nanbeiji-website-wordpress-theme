@@ -54,7 +54,7 @@
                         foreach ((get_categories($args3)) as $category2) {
           $catlink2 = get_category_link($category2->cat_ID); $show_cat2[]='<a class="cat_tags" href="'.$catlink2.'">'.$category2->cat_name.'</a>';
         };  
-        echo implode( ' , ', $show_cat2 ); ?>
+        echo implode( '&nbsp;&nbsp;', $show_cat2 ); ?>
               </div>
               <a href="#">
               <div class="main_news_title">
@@ -114,7 +114,7 @@
                         foreach ((get_categories($args3)) as $category2) {
           $catlink2 = get_category_link($category2->cat_ID); $show_cat2[]='<a class="cat_tags" href="'.$catlink2.'">'.$category2->cat_name.'</a>';
         };  
-        echo implode( ' , ', $show_cat2 ); ?>
+        echo implode( '&nbsp;&nbsp;', $show_cat2 ); ?>
               </div>
                 </div>
               <div class="latest_news_hint">
@@ -171,7 +171,7 @@
                             foreach ((get_categories($args3)) as $category2) {
                 $catlink2 = get_category_link($category2->cat_ID); $show_cat2[]='<a class="cat_tags" href="'.$catlink2.'">'.$category2->cat_name.'</a>';
                 };  
-                echo implode( ' , ', $show_cat2 ); ?>
+                echo implode( '&nbsp;&nbsp;', $show_cat2 ); ?>
                             </div>   
                             <div class="latest_news_author" style="font-size:60%; right:5px; bottom:12px" >
                             <?php echo '作者：' ; the_author(); echo '<span class="visible-xs-inline"><br></span>' ;echo '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' ; echo '发布于：';  echo get_the_date(); ?>
@@ -216,7 +216,7 @@
                           foreach ((get_categories($args3)) as $category2) {
               $catlink2 = get_category_link($category2->cat_ID); $show_cat2[]='<a class="cat_tags" href="'.$catlink2.'">'.$category2->cat_name.'</a>';
               };  
-              echo implode( ' , ', $show_cat2 ); ?>
+              echo implode( '&nbsp;&nbsp;', $show_cat2 ); ?>
                           </div>   
                           <div class="latest_news_author" style="font-size:60%; right:5px; bottom:12px" >
                           <?php echo '作者：' ; the_author(); echo '<span class="visible-xs-inline"><br></span>' ;echo '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' ; echo '发布于：';  echo get_the_date(); ?>
@@ -259,7 +259,7 @@
                           foreach ((get_categories($args3)) as $category2) {
               $catlink2 = get_category_link($category2->cat_ID); $show_cat2[]='<a class="cat_tags" href="'.$catlink2.'">'.$category2->cat_name.'</a>';
               };  
-              echo implode( ' , ', $show_cat2 ); ?>
+              echo implode( '&nbsp;&nbsp;', $show_cat2 ); ?>
                           </div>   
                           <div class="latest_news_author" style="font-size:60%; right:5px; bottom:12px" >
                           <?php echo '作者：' ; the_author(); echo '<span class="visible-xs-inline"><br></span>' ;echo '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' ; echo '发布于：';  echo get_the_date(); ?>
@@ -302,7 +302,7 @@
                           foreach ((get_categories($args3)) as $category2) {
               $catlink2 = get_category_link($category2->cat_ID); $show_cat2[]='<a class="cat_tags" href="'.$catlink2.'">'.$category2->cat_name.'</a>';
               };  
-              echo implode( ' , ', $show_cat2 ); ?>
+              echo implode( '&nbsp;&nbsp;', $show_cat2 ); ?>
                           </div>   
                           <div class="latest_news_author" style="font-size:60%; right:5px; bottom:12px" >
                           <?php echo '作者：' ; the_author(); echo '<span class="visible-xs-inline"><br></span>' ;echo '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' ; echo '发布于：';  echo get_the_date(); ?>

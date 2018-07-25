@@ -1,0 +1,743 @@
+﻿<krpano version="1.19" title="Virtual Tour">
+
+	<include url="skin/vtourskin.xml" />
+   
+
+
+<skin_settings maps="false"
+	               maps_type="google"
+	               maps_bing_api_key=""
+	               maps_google_api_key=""
+	               maps_zoombuttons="false"
+	               gyro="true"
+	               webvr="true"
+	               webvr_gyro_keeplookingdirection="false"
+	               webvr_prev_next_hotspots="true"
+	               littleplanetintro="true"
+	               title="true"
+	               thumbs="true"
+	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+	               thumbs_opened="false"
+	               thumbs_text="false"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="false"
+	               thumbs_scrollindicator="true"
+	               thumbs_loop="false"
+	               tooltips_buttons="false"
+	               tooltips_thumbs="false"
+	               tooltips_hotspots="false"
+	               tooltips_mapspots="false"
+	               deeplinking="false"
+	               loadscene_flags="MERGE"
+	               loadscene_blend="OPENBLEND(0.5, 0.0, 0.75, 0.05, linear)"
+	               loadscene_blend_prev="SLIDEBLEND(0.5, 180, 0.75, linear)"
+	               loadscene_blend_next="SLIDEBLEND(0.5,   0, 0.75, linear)"
+	               loadingtext="loading..."
+	               layout_width="100%"
+	               layout_maxwidth="814"
+	               controlbar_width="-24"
+	               controlbar_height="40"
+	               controlbar_offset="20"
+	               controlbar_offset_closed="-40"
+	               controlbar_overlap.no-fractionalscaling="10"
+	               controlbar_overlap.fractionalscaling="0"
+	               design_skin_images="vtourskin.png"
+	               design_bgcolor="0x2D3E50"
+	               design_bgalpha="0.8"
+	               design_bgborder="0"
+	               design_bgroundedge="1"
+	               design_bgshadow="0 4 10 0x000000 0.3"
+	               design_thumbborder_bgborder="3 0xFFFFFF 1.0"
+	               design_thumbborder_padding="2"
+	               design_thumbborder_bgroundedge="0"
+	               design_text_css="color:#FFFFFF; font-family:Arial;"
+	               design_text_shadow="1"
+	               floorplansizewidth="400"
+	               floorplansizewidth_mobile="250"
+	               />
+
+<!--这是户型图可以拖拽动作-->
+<action name="floorplansize_drag">
+copy(floorplandragebeforewidth,layer[floorplan].width);
+calc(mergedrag,floorplandragebeforewidth-(stagewidth-mouse.stagex));
+asyncloop(pressed,
+	calc(floorplanwidth,stagewidth-mouse.stagex+mergedrag);
+    calc(floorplanheight,(stagewidth-mouse.stagex+mergedrag)*0.7257);
+   asyncloop((floorplanwidth GE 250) AND (floorplanwidth LT 800) AND pressed ,
+	calc(layer[floorplan].width,stagewidth-mouse.stagex+mergedrag);
+    calc(layer[floorplan].height,(stagewidth-mouse.stagex+mergedrag)*0.7257);
+     );
+   asyncloop(floorplanwidth LT 250 AND pressed,
+	calc(layer[floorplan].width,150+100);
+    calc(layer[floorplan].height,180.425+1);
+     );
+   asyncloop(floorplanwidth GE 800 AND pressed,
+	calc(layer[floorplan].width,800);
+    calc(layer[floorplan].height,580.56);
+     );
+
+
+	);
+</action>
+
+<action name="tip">
+
+copy(layer[tiptip].html,tooltip);
+set(layer[tiptip].visible,true);
+asyncloop(tooltip !== null,
+	calc(layer[tiptip].x,mouse.stagex+15);
+    calc(layer[tiptip].y,mouse.stagey+15);
+   );
+</action>
+
+<!--这是移动手机缩略图点扩大碰触添加图层动作-->
+<action name="addpointtouchlarger">
+for(set(f,0), f LT 10, inc(f),
+			calc(pointlargername,'pointtouchlarger_' + f);
+			calc(pointlargername_parent,'floorpoint_'+f);
+			addlayer(get(pointlargername));
+			set(layer[get(pointlargername)].keep, true);
+			set(layer[get(pointlargername)].width, 40);
+			set(layer[get(pointlargername)].height, 40);
+			copy(layer[get(pointlargername)].parent, pointlargername_parent);
+			copy(layer[get(pointlargername)].url, layer[floorpoint_0].url);
+			set(layer[get(pointlargername)].align,center);
+			set(layer[get(pointlargername)].linkedscene, get(scene[get(f)].name) );
+			set(layer[get(pointlargername)].onclick,loadscene(get(linkedscene), null, MERGE, BLEND(0.5));caonimabi(get(linkedscene));worinima(););
+			set(layer[get(pointlargername)].enabled,true);
+			set(layer[get(pointlargername)].alpha,0.0);
+
+			
+
+    );
+</action>
+
+<!--启动画面-->
+<plugin name="stater" type="container" align="center"  width="100%" handcursor="true" height="100%"  keep="true"  enabled="true"  preload="true" bgcolor="0xD6E8F6" bgalpha="0" zorder="1" >
+<plugin name="logo33" type="container"  alpha="0"  align="center" bgcolor="0x404346" bgalpha="1" width="100%" height="100%" handcursor="true"/><!--点按图层-->
+<plugin name="logo"  url="http://image.nanbeiji360.com/qdpoly/newskin/B.png" alpha="0" onclick="set(plugin[stater].enabled,false);startup();tween(plugin[stater].alpha,0,0.6);delayedcall(0.7,set(plugin[stater].visible,false);)" align="center"  width="100%" height="100%" handcursor="true"/>
+<plugin name="logo2" url="http://image.nanbeiji360.com/qdpoly/newskin/B.png" type="image" alpha="0" onloaded="tween(plugin[logo33].alpha,1);tween(plugin[logo2].alpha,1);" onclick="set(plugin[stater].enabled,false);startup();tween(plugin[stater].alpha,0,0.6,);delayedcall(0.7,set(plugin[stater].visible,false);)" align="center"  width="20%" height="prop" handcursor="true" width.mobile="50%"/>
+
+
+
+</plugin>
+
+<!--户型图视角互动-->
+<action name="shiyebiandong">
+
+calc(layer[testmask_LB].rotate, 90-view.fov/2);
+calc(layer[watermark3513L].rotate, -180+view.fov);
+calc(layer[testmask].rotate, view.hlookat-layer[get(layer[testmask].parent)].ro);
+</action>
+
+<style name="button" url="http://image.nanbeiji360.com/qdpoly/newskin/buttons.png" width="40" height="40" align="left" />
+
+<layer name="control_skin" type="container" align="center" width="100%" height="100%" keep="true" visible="false" ><!--皮肤大母子-->
+
+<layer name="tiptip"  url="textfield.swf" align="lefttop" html="" zorder="99"/>
+
+	
+<layer name="TILESTITLES"  url="textfield.swf" align="bottom" y="80" html="青岛保利海上罗兰样板间 拍摄日期：2016年9月 [br]全景拍摄制作：青岛汇新慧艺 电话：15610002502" zorder="99" css="font-family:SimHei; font-size:14px; color:#FFFFFF; font-weight:900;" background="false" textshadow="2" textshadowcolor="0X000000" textshadowrange="8" textshadowalpha="1.0"/>
+	<!-- 镜头控制小按键 -->
+		<layer name="buttons" keep="true" type="container" align="bottom" width="240" height="40" y="30">
+		
+		<layer name="in"     onhover="tip()" onout="set(layer[tiptip].visible,false);set(layer[tiptip].html,'');"  style="button" tooltip="镜头拉近"    x="0"   crop="160|0|40|40" onovercrop="160|40|40|40" ondowncrop="160|80|40|40" ondown="set(fov_moveforce,-1);"      onup="set(fov_moveforce,0);"  />
+		<layer name="out"    onhover="tip()" onout="set(layer[tiptip].visible,false);set(layer[tiptip].html,'');"  style="button" tooltip="镜头拉远"   x="40"  crop="200|0|40|40" onovercrop="200|40|40|40" ondowncrop="200|80|40|40" ondown="set(fov_moveforce,+1);"      onup="set(fov_moveforce,0);" />
+		<layer name="left"   onhover="tip()" onout="set(layer[tiptip].visible,false);set(layer[tiptip].html,'');"  style="button" tooltip="向左看"  x="80"  crop=  "0|0|40|40" onovercrop=  "0|40|40|40" ondowncrop=  "0|80|40|40" ondown="set(hlookat_moveforce,-1);"  onup="set(hlookat_moveforce,0);" />
+		<layer name="right"  onhover="tip()" onout="set(layer[tiptip].visible,false);set(layer[tiptip].html,'');"  style="button" tooltip="向右看" x="120" crop= "40|0|40|40" onovercrop= "40|40|40|40" ondowncrop= "40|80|40|40" ondown="set(hlookat_moveforce,+1);"  onup="set(hlookat_moveforce,0);" />
+		<layer name="up"     onhover="tip()" onout="set(layer[tiptip].visible,false);set(layer[tiptip].html,'');"  style="button" tooltip="向上看"    x="160" crop= "80|0|40|40" onovercrop= "80|40|40|40" ondowncrop= "80|80|40|40" ondown="set(vlookat_moveforce,-1);"  onup="set(vlookat_moveforce,0);" />
+		<layer name="down"   onhover="tip()" onout="set(layer[tiptip].visible,false);set(layer[tiptip].html,'');"  style="button" tooltip="向下看"  x="200" crop="120|0|40|40" onovercrop="120|40|40|40" ondowncrop="120|80|40|40" ondown="set(vlookat_moveforce,+1);"  onup="set(vlookat_moveforce,0);" />
+	</layer>
+
+
+<!--户型图-->
+    <layer name="floorplan" type="container" align="righttop" width="350"  height="254" keep="true" bgcolor="0xFFFFFF" bgalpha="0" state="opened"  x="0" scalechildren="true" width.mobile="175" height.mobile="127"  ><!--平面图大母子-->
+           <!--户型图拖拽按键-->
+          <layer name="drag_point" enabled.mobile="false" visible.mobile="false" url="http://image.nanbeiji360.com/qdpoly/newskin/icon_06.png" align="leftbottom" width="25" x="-25" y="-25" height="prop" ondown="floorplansize_drag()" handcursor="true" alpha="0.5" zorder="41" onhover="tip()" onout="set(layer[tiptip].visible,false);set(layer[tiptip].html,'');" tooltip="按住鼠标左键拖动以改变户型图大小"/>  
+          <layer name="drag_pointmobile" enabled="false" enabled.mobile="false"  alpha="0" url="http://image.nanbeiji360.com/qdpoly/newskin/icon_06.png" width="80" height="80" x="-80" y="-80" ondown="floorplansize_drag()" align="lefttbottom"  />
+           <layer name="floorplan_cube" enabled="true" type="container" bgcolor="0xFFFFFF" bgalpha="0.0" width="100%" height="100%" bgborder="25 0x000000 0" align="center"> 
+           
+           <!--放平面图点的地方-->
+           <layer name="floorplan_pointset" enabled="true" handcursor="false" type="container"  align="center" width="100%" height="100%" zorder="67">
+            
+             <layer name="floorpoint_0" enabled="true" url="http://image.nanbeiji360.com/qdpoly/newskin/floorplanpoint.png" x="22.8%" y="46.2%" width="25" height="25" scale.mobile="0.7"
+             align="lefttop" edge="center" crop="0|0|40|40" onover="copy(layer[floorpoint_G2].parent,name);set(layer[floorpoint_G2].visible,true);"  
+             onout="set(layer[floorpoint_G2].visible,false)" ro="220" onclick="loadscene(scene_01, null, MERGE, BLEND(0.5));caonimabi(scene_01);worinima();"/>
+             
+             <layer name="floorpoint_1" enabled="true" url="http://image.nanbeiji360.com/qdpoly/newskin/floorplanpoint.png" x="8.2%" y="59.6%" width="25" height="25" scale.mobile="0.7" 
+             align="lefttop" edge="center" crop="0|0|40|40" onover="copy(layer[floorpoint_G2].parent,name);set(layer[floorpoint_G2].visible,true);" 
+              onout="set(layer[floorpoint_G2].visible,false)" ro="25" onclick="loadscene(scene_02, null, MERGE, BLEND(0.5));caonimabi(scene_02);worinima();"/>
+
+             <layer name="floorpoint_2" enabled="true" url="http://image.nanbeiji360.com/qdpoly/newskin/floorplanpoint.png" x="9.2%" y="27.6%" width="25" height="25" scale.mobile="0.7" 
+             align="lefttop" edge="center" crop="0|0|40|40" onover="copy(layer[floorpoint_G2].parent,name);set(layer[floorpoint_G2].visible,true);"  
+             onout="set(layer[floorpoint_G2].visible,false)" ro="35" onclick="loadscene(scene_03, null, MERGE, BLEND(0.5));caonimabi(scene_03);worinima();"/>
+
+             <layer name="floorpoint_3" enabled="true" url="http://image.nanbeiji360.com/qdpoly/newskin/floorplanpoint.png" x="14%" y="92%" width="25" height="25" scale.mobile="0.7" 
+             align="lefttop" edge="center" crop="0|0|40|40" onover="copy(layer[floorpoint_G2].parent,name);set(layer[floorpoint_G2].visible,true);"  
+             onout="set(layer[floorpoint_G2].visible,false)" ro="120" onclick="loadscene(scene_04, null, MERGE, BLEND(0.5));caonimabi(scene_04);worinima();"/>
+
+             <layer name="floorpoint_4" enabled="true" url="http://image.nanbeiji360.com/qdpoly/newskin/floorplanpoint.png" x="34.9%" y="91.4%" width="25" height="25" scale.mobile="0.7" 
+             align="lefttop" edge="center" crop="0|0|40|40" onover="copy(layer[floorpoint_G2].parent,name);set(layer[floorpoint_G2].visible,true);"  
+             onout="set(layer[floorpoint_G2].visible,false)" ro="235" onclick="loadscene(scene_05, null, MERGE, BLEND(0.5));caonimabi(scene_05);worinima();"/>
+
+             <layer name="floorpoint_5" enabled="true" url="http://image.nanbeiji360.com/qdpoly/newskin/floorplanpoint.png" x="76.3%" y="55.5%" width="25" height="25" scale.mobile="0.7" 
+             align="lefttop" edge="center" crop="0|0|40|40" onover="copy(layer[floorpoint_G2].parent,name);set(layer[floorpoint_G2].visible,true);"  
+             onout="set(layer[floorpoint_G2].visible,false)" ro="80" onclick="loadscene(scene_06, null, MERGE, BLEND(0.5));caonimabi(scene_06);worinima();"/>
+
+             <layer name="floorpoint_6" enabled="true" url="http://image.nanbeiji360.com/qdpoly/newskin/floorplanpoint.png" x="58.5%" y="33.2%" width="25" height="25" scale.mobile="0.7" 
+             align="lefttop" edge="center" crop="0|0|40|40" onover="copy(layer[floorpoint_G2].parent,name);set(layer[floorpoint_G2].visible,true);"  
+             onout="set(layer[floorpoint_G2].visible,false)" ro="200" onclick="loadscene(scene_07, null, MERGE, BLEND(0.5));caonimabi(scene_07);worinima();"/>
+
+             <layer name="floorpoint_7" enabled="true" url="http://image.nanbeiji360.com/qdpoly/newskin/floorplanpoint.png" x="51.1%" y="58.5%" width="25" height="25"  scale.mobile="0.7"
+             align="lefttop" edge="center" crop="0|0|40|40" onover="copy(layer[floorpoint_G2].parent,name);set(layer[floorpoint_G2].visible,true);"  
+             onout="set(layer[floorpoint_G2].visible,false)" ro="90" onclick="loadscene(scene_08, null, MERGE, BLEND(0.5));caonimabi(scene_08);worinima();"/>
+
+             <layer name="floorpoint_8" enabled="true" url="http://image.nanbeiji360.com/qdpoly/newskin/floorplanpoint.png" x="85.0%" y="29.9%" width="25" height="25" scale.mobile="0.7" 
+             align="lefttop" edge="center" crop="0|0|40|40" onover="copy(layer[floorpoint_G2].parent,name);set(layer[floorpoint_G2].visible,true);worinima();"  
+             onout="set(layer[floorpoint_G2].visible,false)" ro="135" onclick="loadscene(scene_09, null, MERGE, BLEND(0.5));caonimabi(scene_09);"/>
+
+             <layer name="floorpoint_9" enabled="true" url="http://image.nanbeiji360.com/qdpoly/newskin/floorplanpoint.png" x="51.3%" y="29.6%" width="25" height="25"  scale.mobile="0.7"
+             align="lefttop" edge="center" crop="0|0|40|40" onover="copy(layer[floorpoint_G2].parent,name);set(layer[floorpoint_G2].visible,true);"  
+             onout="set(layer[floorpoint_G2].visible,false)" ro="290" onclick="loadscene(scene_10, null, MERGE, BLEND(0.5));caonimabi(scene_10);worinima();"/>
+
+            <layer name="floorpoint_G" enabled="false" url="http://image.nanbeiji360.com/qdpoly/newskin/floorplanpoint.png" visible="false" x="0" y="0" width="25" height="25"  scale.mobile="0.5"
+            align="center" edge="center" crop="40|0|40|40" zorder="52"/>
+
+            <layer name="floorpoint_G2" enabled="false" url="http://image.nanbeiji360.com/qdpoly/newskin/floorplanpoint.png" visible="false" x="0" y="0" width="25" height="25" 
+            align="center" edge="center" crop="40|0|40|40" zorder="51"/>
+           
+            
+            <layer name="garden" url="textfield.swf" align="lefttop" edge="center" html="入户花园" x="23.7%" y="8.6%" enabled="false"  zorder="61" css="font-family:SimHei; font-size:14px; color:#FFFFFF; font-weight:900;" css.mobile="font-family:SimHei; font-size:8px; color:#FFFFFF; font-weight:900;" background="false" textshadow="2" textshadowcolor="0X000000" textshadowrange="8" textshadowalpha="1.0"/>
+            <layer name="ktchen" url="textfield.swf" align="lefttop" edge="center" html="厨房" x="15.7%" y="27.2%" enabled="false"  zorder="61" css="font-family:SimHei; font-size:14px; color:#FFFFFF; font-weight:900;" css.mobile="font-family:SimHei; font-size:8px; color:#FFFFFF; font-weight:900;"  background="false" textshadow="2" textshadowcolor="0X000000" textshadowrange="8" textshadowalpha="1.0"/>
+            <layer name="dinner" url="textfield.swf" align="lefttop" edge="center" html="餐厅" x="35.5%" y="29.0%" enabled="false"  zorder="61" css="font-family:SimHei; font-size:14px; color:#FFFFFF; font-weight:900;" css.mobile="font-family:SimHei; font-size:8px; color:#FFFFFF; font-weight:900;"  background="false" textshadow="2" textshadowcolor="0X000000" textshadowrange="8" textshadowalpha="1.0"/>
+            <layer name="livingroom" url="textfield.swf" align="lefttop" edge="center" html="客厅" x="14.4%" y="54.7%" enabled="false"  zorder="61" css="font-family:SimHei; font-size:14px; color:#FFFFFF; font-weight:900;" css.mobile="font-family:SimHei; font-size:8px; color:#FFFFFF; font-weight:900;"  background="false" textshadow="2" textshadowcolor="0X000000" textshadowrange="8" textshadowalpha="1.0"/>
+            <layer name="bacony1" url="textfield.swf" align="lefttop" edge="center" html="客厅阳台" x="33.9%" y="84.8%" enabled="false"  zorder="61" css="font-family:SimHei; font-size:14px; color:#FFFFFF; font-weight:900;" css.mobile="font-family:SimHei; font-size:8px; color:#FFFFFF; font-weight:900;"  background="false" textshadow="2" textshadowcolor="0X000000" textshadowrange="8" textshadowalpha="1.0"/>
+            <layer name="WC" url="textfield.swf" align="lefttop" edge="center" html="次卫" x="50.9%" y="24.4%" enabled="false"  zorder="61" css="font-family:SimHei; font-size:14px; color:#FFFFFF; font-weight:900;" css.mobile="font-family:SimHei; font-size:8px; color:#FFFFFF; font-weight:900;"  background="false" textshadow="2" textshadowcolor="0X000000" textshadowrange="8" textshadowalpha="1.0"/>
+            <layer name="bed2" url="textfield.swf" align="lefttop" edge="center" html="次卧二" x="56.5%" y="67.7%" enabled="false"  zorder="61" css="font-family:SimHei; font-size:14px; color:#FFFFFF; font-weight:900;" css.mobile="font-family:SimHei; font-size:8px; color:#FFFFFF; font-weight:900;"  background="false" textshadow="2" textshadowcolor="0X000000" textshadowrange="8" textshadowalpha="1.0"/>
+            <layer name="bed1" url="textfield.swf" align="lefttop" edge="center" html="次卧一" x="66.7%" y="23.3%" enabled="false"  zorder="61" css="font-family:SimHei; font-size:14px; color:#FFFFFF; font-weight:900;" css.mobile="font-family:SimHei; font-size:8px; color:#FFFFFF; font-weight:900;"  background="false" textshadow="2" textshadowcolor="0X000000" textshadowrange="8" textshadowalpha="1.0"/>
+            <layer name="bed" url="textfield.swf" align="lefttop" edge="center" html="主卧" x="72.1%" y="69.1%" enabled="false"  zorder="61" css="font-family:SimHei; font-size:14px; color:#FFFFFF; font-weight:900;" css.mobile="font-family:SimHei; font-size:8px; color:#FFFFFF; font-weight:900;"  background="false" textshadow="2" textshadowcolor="0X000000" textshadowrange="8" textshadowalpha="1.0"/>
+            <layer name="wc2" url="textfield.swf" align="lefttop" edge="center" html="主卫" x="80.4%" y="33%" enabled="false"  zorder="61" css="font-family:SimHei; font-size:14px; color:#FFFFFF; font-weight:900;" css.mobile="font-family:SimHei; font-size:8px; color:#FFFFFF; font-weight:900;"  background="false" textshadow="2" textshadowcolor="0X000000" textshadowrange="8" textshadowalpha="1.0"/>
+
+</layer>
+
+            
+                <layer name="floorplan_pic" enabled="false" url="http://image.nanbeiji360.com/qdpoly/newskin/floorplan copy.png"  width="100%" height="100%" align="center">
+                    
+                </layer>
+
+            </layer>
+
+
+
+
+
+    </layer>
+
+
+           <!--户型图视野小蓝变动-->
+           <layer name="testmask"  type="container" align="center" width="400" height="400" keep="true" bgcolor="0xFFFFFF" bgalpha="0.0" visible="false"  >
+              
+                 <layer name="testmask_LB"  type="container" align="center" width="200" height="200" keep="true"   edge="bottom"
+                  bgcolor="0xFFFFFF" bgalpha="0" maskchildren="true" rotate="60" >
+                  
+                   <layer name="watermark3513L" url="http://image.nanbeiji360.com/qdpoly/newskin/abcd.png" align="bottom"  x="0" width="100" height="prop" scale.mobile="0.5" keep="true" alpha="0.7" rotate="-120">
+                   
+                  </layer><!--LOGO水印-->
+                  </layer>
+                 
+                 
+           </layer>
+     <layer name="home" url="http://image.nanbeiji360.com/qdpoly/newskin/home.png" handcursor="true" onclick="openurl(http://localhost/wordpress,_self)" align="top" width="80" height="prop" y.mobile="130" scale.mobile="0.5" keep="true" alpha="0.7" enabled="true"/>
+     <layer name="watermark" url="http://image.nanbeiji360.com/qdpoly/newskin/BW.png" align="rightbottom" width="260" height="prop" y.mobile="130" scale.mobile="0.5" keep="true" alpha="0.7" enabled="false"/><!--LOGO水印-->
+
+     <!--缩略图大母子-->
+     <layer name="suoluetuyulan" type="container" keep="true"  align="lefttop" width="170" x="-140" height="100%" state="closed" 
+
+    
+     width.mobile="120" x.mobile="-70">
+
+         <!--缩略图伸缩小按键-->
+
+         <layer name="suoluetukuodapengchu" url="http://image.nanbeiji360.com/qdpoly/newskin/suoluetuwenzi.png"  width="50" height="90" alpha="0" align="right" enabled="true"  visible="false" visible.mobile="true"
+         onclick.mobile="if(layer[suoluetuyulan].state == 'closed', tween(layer[suoluetuyulan].x,0,0.7,easeOutQuint), tween(layer[suoluetuyulan].x,-70,0.7,easeOutQuint)); switch(layer[suoluetuyulan].state,'closed','opened');switch(layer[suoluetufangxiang].crop,'30|0|30|30','0|0|30|30');" 
+         zorder="99" />
+         <layer name="suoluetuyulankaiguan" type="image" url="http://image.nanbeiji360.com/qdpoly/newskin/suoluetuanniuyuanbaidi.png"  alpha="0.7" align="right" width="30" height="80" onhover="tip()" onout="set(layer[tiptip].visible,false);set(layer[tiptip].html,'');" tooltip="拉出/推回缩略图栏" 
+         onclick="if(layer[suoluetuyulan].state == 'closed', tween(layer[suoluetuyulan].x,0,0.7,easeOutQuint), tween(layer[suoluetuyulan].x,-140,0.7,easeOutQuint)); switch(layer[suoluetuyulan].state,'closed','opened');switch(layer[suoluetufangxiang].crop,'30|0|30|30','0|0|30|30');" 
+
+         width.mobile="20" height.mobile="50"
+         onclick.mobile="" x.mobile="30"/>
+         
+
+         <layer name="suoluetuyulankaiguanwenzi" url="http://image.nanbeiji360.com/qdpoly/newskin/suoluetuwenzi.png" align="right"  width="30" height="80" width.mobile="20" height.mobile="50" x.mobile="30" enabled="false" alpha="1"/>
+         <layer name="suoluetufangxiang" url="http://image.nanbeiji360.com/qdpoly/newskin/suoluetufuhao2.png" align="right"  width="16" height="16" y="31" x="5" width.mobile="8" height.mobile="8" x.mobile="35" enabled="false" alpha="1" crop="30|0|30|30" y.mobile="20" />
+
+
+     		<!--放缩略图的地方-->
+     		<layer name="souluetuqu" keep="true" type="container" align="lefttop" width="140" height="100%" x="0" y="0" bgcolor="0xFFFFFF" bgalpha="0.7"
+
+     		   width.mobile="70" >
+			  <!--小白边-->
+			  <layer name="baibiananxia" keep="true" type="container" align="center" visible="false" width="112" height="112" bgborder="4 0xFFFFFF"
+
+			  width.mobile="52" height.mobile="52"  />
+			   <!--小蓝边-->
+			   <layer name="lanbianxuanfu" keep="true" type="container" align="center" visible="false" width="112" height="112" bgborder="4 0x3B8EFF"
+
+			   width.mobile="42" height.mobile="42"/>
+			  <layer name="suoluetuqu_scrollarea" url.flash="%SWFPATH%/plugins/scrollarea.swf" url.html5="%SWFPATH%/plugins/scrollarea.js" align="lefttop" width="100" height="100%" direction="v" onloaded="skinupdatescroll()" />
+		    </layer>
+     </layer>
+</layer>
+	
+<action name="addthumbs">
+		calc(layer[suoluetuqu_scrollarea].height, scene.count*130 + 20);
+		for(set(i,0), i LT scene.count, inc(i),
+			calc(thumbname,'thumb_' + i);
+			addlayer(get(thumbname));
+			copy(layer[get(thumbname)].url, scene[get(i)].thumburl);
+			set(layer[get(thumbname)].keep, true);
+			set(layer[get(thumbname)].parent, 'suoluetuqu_scrollarea');
+			set(layer[get(thumbname)].align, lefttop);
+			set(layer[get(thumbname)].x, 10);
+			set(thumbxxx,10);
+			calc(thumbyyy,i*130 + 10);
+			copy(scene[get(i)].thumbxxx,thumbxxx);
+            add(scene[get(i)].thumbyyy,thumbyyy,70);
+			calc(layer[get(thumbname)].y, i*130 + 10);
+			set(layer[get(thumbname)].width,120);
+			set(layer[get(thumbname)].height,120);
+			set(layer[get(thumbname)].linkedscene, get(scene[get(i)].name) );
+			set(layer[get(thumbname)].onclick,   loadscene(get(linkedscene), null, MERGE, BLEND(0.5));copy(layer[baibiananxia].parent,name);set(layer[baibiananxia].visible,true);caonimabi(get(linkedscene));  );
+			set(layer[get(thumbname)].onover,   if(layer[baibiananxia].parent == name AND layer[baibiananxia].visible == true ,null,copy(layer[lanbianxuanfu].parent,name);set(layer[lanbianxuanfu].visible,true); ););
+			set(layer[get(thumbname)].onout,   copy(layer[lanbianxuanfu].parent,name);set(layer[lanbianxuanfu].visible,false); );
+		  
+		  );
+	</action>
+
+<action name="caonimabi">
+layer[suoluetuqu_scrollarea].scrolltocenter(get(scene[%1].thumbxxx),get(scene[%1].thumbyyy));
+</action>
+
+<action name="worinima">
+set(layer[floorplan].alpha,1);
+
+</action>
+
+	
+	<action name="skinupdatescroll">
+		if(layer[suoluetuqu_scrollarea].loaded,
+			set(cursceneindex, 0);
+			if(xml.scene, copy(cursceneindex, scene[get(xml.scene)].index));
+			layer[suoluetuqu_scrollarea].setcenter(get(scene[get(cursceneindex)].thumbxxx), get(scene[get(cursceneindex)].thumbyyy));
+		  );
+	</action>	  
+
+
+	<action name="addthumbs_mobile">
+		calc(layer[suoluetuqu_scrollarea].height, scene.count*65 + 10);
+		for(set(i,0), i LT scene.count, inc(i),
+			calc(thumbname,'thumb_' + i);
+			addlayer(get(thumbname));
+			copy(layer[get(thumbname)].url, scene[get(i)].thumburl);
+			set(layer[get(thumbname)].keep, true);
+			set(layer[get(thumbname)].parent, 'suoluetuqu_scrollarea');
+			set(layer[get(thumbname)].align, lefttop);
+			set(layer[get(thumbname)].x, 5);
+			set(thumbxxx,5);
+			calc(thumbyyy,i*65 + 5);
+			copy(scene[get(i)].thumbxxx,thumbxxx);
+            add(scene[get(i)].thumbyyy,thumbyyy,35);
+			calc(layer[get(thumbname)].y, i*65 + 5);
+			set(layer[get(thumbname)].width,60);
+			set(layer[get(thumbname)].height,60);
+			set(layer[get(thumbname)].linkedscene, get(scene[get(i)].name) );
+			set(layer[get(thumbname)].onclick,   loadscene(get(linkedscene), null, MERGE, BLEND(0.5));copy(layer[baibiananxia].parent,name);set(layer[baibiananxia].visible,true);caonimabi(get(linkedscene)); );	
+			set(layer[get(thumbname)].onover,   if(layer[baibiananxia].parent == name AND layer[baibiananxia].visible == true ,null,copy(layer[lanbianxuanfu].parent,name);set(layer[lanbianxuanfu].visible,true); ););
+			set(layer[get(thumbname)].onout,   copy(layer[lanbianxuanfu].parent,name);set(layer[lanbianxuanfu].visible,false); );
+			
+		  
+		  );
+	</action>
+
+
+<events name="pifufanying" keep="true"  onnewscene="baibianyuchangjingwenhe();" onloadcomplete="baibianyuchangjingwenhe();" onxmlcomplete="set(events[pifufanying].onxmlcomplete,null);" onviewchange="shiyebiandong()"/>
+
+
+<action name="baibianyuchangjingwenhe">
+txtadd(dangqianchangjingsuoluetu, 'thumb_', get(scene[get(xml.scene)].index));
+	if(layer[get(dangqianchangjingsuoluetu)],
+		set(layer[baibiananxia].parent, get(dangqianchangjingsuoluetu));
+		set(layer[baibiananxia].visible, true);
+	  ,
+		set(layer[baibiananxia].visible, false);
+		set(layer[get(dangqianchangjingsuoluetu)].nowscence,true)
+	  );	
+
+txtadd(dangqianchangfloorpoint, 'floorpoint_', get(scene[get(xml.scene)].index));
+	if(layer[get(dangqianchangfloorpoint)],
+		set(layer[floorpoint_G].parent, get(dangqianchangfloorpoint));
+		set(layer[floorpoint_G].visible, true);
+	  ,
+		set(layer[floorpoint_G].visible, false);
+		set(layer[get(dangqianchangfloorpoint)].nowscence,true)
+	  );	
+
+	txtadd(dangqianchangfloorpoint, 'floorpoint_', get(scene[get(xml.scene)].index));
+	if(layer[get(dangqianchangfloorpoint)],
+		set(layer[testmask].parent, get(dangqianchangfloorpoint));
+		set(layer[testmask].visible, true);
+	  ,
+		set(layer[testmask].visible, false);
+		set(layer[get(dangqianchangfloorpoint)].nowscence,true)
+	  );
+
+</action>
+	
+	<action name="startup"  >
+		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
+		loadscene(get(startscene), null, MERGE);
+		if(startactions !== null, startactions() );
+		skin_startup();
+		floorplansize();
+		set(layer[control_skin].visible,true);
+		if(device.mobile, addthumbs_mobile();set(layer[floorplan].alpha,0.55);addpointtouchlarger();, addthumbs());
+		
+	</action>
+
+<autorotate enabled="true"
+waittime="3" accel="0.1" speed="0.5"/>
+
+<plugin name="options" url="plugins/options.swf" keep="true"/>
+
+
+	
+	<scene name="scene_01" title="01" onstart="" havevrimage="true" thumburl="http://image.nanbeiji360.com/qdpoly/panos/01.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="74.286" vlookat="-0.708" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="http://image.nanbeiji360.com/qdpoly/panos/01.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="2560" tiledimageheight="2560">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/01.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1280" tiledimageheight="1280">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/01.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="640" tiledimageheight="640">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/01.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="http://image.nanbeiji360.com/qdpoly/panos/01.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="99.881" atv="25.325" linkedscene="scene_02" linkedscene_lookat="283.10,0.5,120" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-177.347" atv="23.188" linkedscene="scene_03" linkedscene_lookat="352.89,0.5,120" />
+
+	</scene>
+
+<style name="skin_hotspotstyle" url="skin\vtourskin_hotspot.png" scale="0.5" edge="top" distorted="true" 
+	       tooltip=""
+	       linkedscene=""
+	       linkedscene_lookat=""
+	       onclick="skin_hotspotstyle_click();"
+	       onover="tween(scale,0.55);"
+	       onout="tween(scale,0.5);"
+	       onloaded="if(linkedscene AND skin_settings.tooltips_hotspots, copy(tooltip,scene[get(linkedscene)].title); loadstyle(skin_tooltips); );"
+	       />
+
+<action name="skin_hotspotstyle_click">
+		if(linkedscene,
+			if(linkedscene_lookat,
+				txtsplit(linkedscene_lookat, ',', hs_lookat_h, hs_lookat_v, hs_lookat_fov);
+			  );
+			set(enabled, false);
+			skin_hidetooltips();
+			tween(depth|alpha|oy|rx, 4000|0.0|-50|-60, 0.5, default,
+				skin_loadscene(get(linkedscene), get(skin_settings.loadscene_blend));caonimabi(get(linkedscene));
+				if(hs_lookat_h !== null,
+					skin_lookat(get(hs_lookat_h), get(hs_lookat_v), get(hs_lookat_fov));
+					delete(hs_lookat_h, hs_lookat_v, hs_lookat_fov);
+				  );
+				skin_updatescroll();
+			  );
+		  );
+	</action>
+	
+<action name="skin_loadscene">
+		if(webvr.isenabled AND scene.count GT 1,
+			set(hotspot[webvr_prev_scene].visible, false);
+			set(hotspot[webvr_next_scene].visible, false);
+		  );
+
+		txtadd(layer[skin_thumbborder].parent, 'skin_thumb_', get(scene[%1].index));
+		layer[skin_thumbs].scrolltocenter(get(scene[%1].thumbx), get(scene[%1].thumby));
+		loadscene(get(scene[%1].name), null, get(skin_settings.loadscene_flags), %2);
+	</action>
+
+<action name="skin_lookat">
+		if(webvr.isenabled,
+			<!-- adjust the VR prev/next hotspots for the view change -->
+			calc(hlookat_offset, %1 - view.hlookat);
+			add(hotspot[webvr_prev_scene].ath, hlookat_offset);
+			add(hotspot[webvr_next_scene].ath, hlookat_offset);
+		  );
+		if(plugin[skin_gyro].enabled,
+			<!-- reset the gyro tracking -->
+			plugin[skin_gyro].resetsensor(%1);
+		  );
+		<!-- change the view -->
+		lookat(%1, %2, %3);
+	</action>
+
+
+
+
+
+	<scene name="scene_02" title="02" onstart="" havevrimage="true" thumburl="http://image.nanbeiji360.com/qdpoly/panos/02.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="120.874" vlookat="4.230" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="http://image.nanbeiji360.com/qdpoly/panos/02.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="2560" tiledimageheight="2560">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/02.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1280" tiledimageheight="1280">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/02.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="640" tiledimageheight="640">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/02.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="http://image.nanbeiji360.com/qdpoly/panos/02.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="74.402" atv="23.123" linkedscene="scene_01" linkedscene_lookat="-85,0.5,120"/>
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="30.626" atv="15.669" linkedscene="scene_03" linkedscene_lookat="35,0.5,120"/>
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-161.705" atv="16.776" linkedscene="scene_04" linkedscene_lookat="-70,0.5,120" />
+
+	</scene>
+
+	<scene name="scene_03" title="03" onstart="" havevrimage="true" thumburl="http://image.nanbeiji360.com/qdpoly/panos/03.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="192.580" vlookat="0.537" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="http://image.nanbeiji360.com/qdpoly/panos/03.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="2560" tiledimageheight="2560">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/03.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1280" tiledimageheight="1280">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/03.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="640" tiledimageheight="640">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/03.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="http://image.nanbeiji360.com/qdpoly/panos/03.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="177.496" atv="25.734" linkedscene="scene_01" linkedscene_lookat="8.5,0.5,120" />
+
+	</scene>
+
+	<scene name="scene_04" title="04" onstart="" havevrimage="true" thumburl="http://image.nanbeiji360.com/qdpoly/panos/04.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="74.995" vlookat="-0.472" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="http://image.nanbeiji360.com/qdpoly/panos/04.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="2560" tiledimageheight="2560">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/04.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1280" tiledimageheight="1280">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/04.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="640" tiledimageheight="640">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/04.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="http://image.nanbeiji360.com/qdpoly/panos/04.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="102.317" atv="16.951" linkedscene="scene_02" linkedscene_lookat="-1.4,0.5,120" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-152.069" atv="24.141" linkedscene="scene_05" linkedscene_lookat="303,0.5,120"/>
+
+	</scene>
+
+	<scene name="scene_05" title="05" onstart="" havevrimage="true" thumburl="http://image.nanbeiji360.com/qdpoly/panos/05.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="215.858" vlookat="5.892" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="http://image.nanbeiji360.com/qdpoly/panos/05.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="2560" tiledimageheight="2560">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/05.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1280" tiledimageheight="1280">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/05.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="640" tiledimageheight="640">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/05.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="http://image.nanbeiji360.com/qdpoly/panos/05.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="141.521" atv="22.681" linkedscene="scene_04" />
+
+	</scene>
+
+	<scene name="scene_06" title="06" onstart="" havevrimage="true" thumburl="http://image.nanbeiji360.com/qdpoly/panos/06.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="284.270" vlookat="-0.118" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="http://image.nanbeiji360.com/qdpoly/panos/06.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="2560" tiledimageheight="2560">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/06.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1280" tiledimageheight="1280">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/06.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="640" tiledimageheight="640">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/06.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="http://image.nanbeiji360.com/qdpoly/panos/06.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_07" title="07" onstart="" havevrimage="true" thumburl="http://image.nanbeiji360.com/qdpoly/panos/07.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-128.043" vlookat="1.062" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="http://image.nanbeiji360.com/qdpoly/panos/07.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="2560" tiledimageheight="2560">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/07.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1280" tiledimageheight="1280">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/07.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="640" tiledimageheight="640">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/07.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="http://image.nanbeiji360.com/qdpoly/panos/07.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_08" title="08" onstart="" havevrimage="true" thumburl="http://image.nanbeiji360.com/qdpoly/panos/08.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-111.283" vlookat="1.669" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="http://image.nanbeiji360.com/qdpoly/panos/08.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="2560" tiledimageheight="2560">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/08.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1280" tiledimageheight="1280">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/08.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="640" tiledimageheight="640">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/08.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="http://image.nanbeiji360.com/qdpoly/panos/08.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_09" title="09" onstart="" havevrimage="true" thumburl="http://image.nanbeiji360.com/qdpoly/panos/09.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="278.124" vlookat="-2.929" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="http://image.nanbeiji360.com/qdpoly/panos/09.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="2560" tiledimageheight="2560">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/09.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1280" tiledimageheight="1280">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/09.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="640" tiledimageheight="640">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/09.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="http://image.nanbeiji360.com/qdpoly/panos/09.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_10" title="10" onstart="" havevrimage="true" thumburl="http://image.nanbeiji360.com/qdpoly/panos/10.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="184.118" vlookat="-2.027" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="http://image.nanbeiji360.com/qdpoly/panos/10.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="2560" tiledimageheight="2560">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/10.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1280" tiledimageheight="1280">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/10.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="640" tiledimageheight="640">
+				<cube url="http://image.nanbeiji360.com/qdpoly/panos/10.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="http://image.nanbeiji360.com/qdpoly/panos/10.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+
+</krpano>

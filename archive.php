@@ -16,7 +16,7 @@
         <ol class="breadcrumb">
           <li><a href="<?php echo get_site_url()?>">主页</a></li>
           <?php if ($category_parent_id==2) { ?> 
-          <li><a href="<?php echo get_site_url(null,'/portfolio')?>">案例作品</a></li>
+          <li><a href="<?php echo get_site_url(null,'/portfolio')?>">作品案例</a></li>
           <li><?php single_cat_title(); ?></li> 
           <?php }  
           else { ?> <li><a href="<?php echo get_site_url(null,'/news')?>">新闻动态</a></li>
@@ -57,8 +57,8 @@
               
             </ul>
             <?php
-  if ( function_exists('wp_bootstrap_pagination') )
-    wp_bootstrap_pagination();
+  if ( function_exists('wp_bootstrap_pagination') ){
+    wp_bootstrap_pagination(); }
 ?>
 
           </div> 

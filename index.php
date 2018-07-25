@@ -13,7 +13,7 @@
                     <img class="main1_ani_02"  data-animation-in="fadeIn" data-delay-in="0.4" data-duration-in="0.9" src="<?php echo get_theme_file_uri('/img/p1_middletext.png')?>" alt="flash-1">
                     <img class="main1_ani_03"  data-animation-in="fadeInUp" data-delay-in="0.4" data-duration-in="0.9" src="<?php echo get_theme_file_uri('/img/p1_longtext.png')?>" alt="flash-1">
                     <div class="iwantoask_wrapper">
-                    <button class="main1_ani_04 btn btn-danger btn-lg btn-block" >我要咨询</button>
+                    <button class="main1_ani_04 btn btn-danger btn-lg btn-block" >请拨156-1000-2502</button>
                   </div>
                 </div>
   
