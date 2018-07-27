@@ -14,7 +14,7 @@ else{wp_title(''); echo ' | '; bloginfo('name');}
 
 ?> </title>
 <meta name="keywords" content="青岛效果图,青岛效果图制作,青岛效果图设计,效果图设计,效果图制作">
-<meta name="description" content="青岛效果图,青岛汇新慧艺效果图——您身边的制图专家,<?php 
+<meta name="description" content="青岛效果图,青岛汇新慧艺效果图——您身边的制图专家,主营：效果图制作设计,室内室外效果图,产品展示效果图制作,720全景展示,竭诚为您服务,<?php 
 
 if (!is_home() AND !is_search()) { wp_title(''); } 
 
@@ -55,6 +55,15 @@ if (!is_home() AND !is_search()) { wp_title(''); }
 
 
 </style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123001211-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123001211-1');
+</script>
 
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
