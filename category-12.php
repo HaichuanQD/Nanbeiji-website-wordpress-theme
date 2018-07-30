@@ -69,7 +69,7 @@
                             <div class=" col-md-4 col-sm-6">
                                 <div class="cases_container_portfolio" data-aos="fade" data-aos-offset="-999">
                                 <a href="<?php the_permalink(); ?>">
-                                <div class=" port_th_cont" style="background-image:url(<?php if ( has_post_thumbnail() ) { the_post_thumbnail_url( 'large' ); } ?>); "  >
+                                <div class=" port_th_cont" title="<?php the_title(); ?>" style="background-image:url(<?php if ( has_post_thumbnail() ) { the_post_thumbnail_url( 'large' ); } ?>); "  >
                                 <span class="case-hover visible-lg-block">
                                     <span class="hover-link2"></span>
                                 </span>

@@ -9,9 +9,9 @@
                 <div class="swiper-slide lunbo1" >
               
                 <div class="container makemiddle" >
-                    <img class="main1_ani_01"  data-animation-in="fadeInDown" data-delay-in="0.2" data-duration-in="0.7" src="https://cdn.huixinhuiyi.com/img/logowhite.png" alt="flash-1">
-                    <img class="main1_ani_02"  data-animation-in="fadeIn" data-delay-in="0.4" data-duration-in="0.9" src="https://cdn.huixinhuiyi.com/img/p1_middletext.png" alt="flash-1">
-                    <img class="main1_ani_03"  data-animation-in="fadeInUp" data-delay-in="0.4" data-duration-in="0.9" src="https://cdn.huixinhuiyi.com/img/p1_longtext.png" alt="flash-1">
+                    <img class="main1_ani_01"  data-animation-in="fadeInDown" data-delay-in="0.2" data-duration-in="0.7" src="https://cdn.huixinhuiyi.com/img/logowhite.png" alt="请刷新">
+                    <img class="main1_ani_02"  data-animation-in="fadeIn" data-delay-in="0.4" data-duration-in="0.9" src="https://cdn.huixinhuiyi.com/img/p1_middletext.png" alt="请刷新">
+                    <img class="main1_ani_03"  data-animation-in="fadeInUp" data-delay-in="0.4" data-duration-in="0.9" src="https://cdn.huixinhuiyi.com/img/p1_longtext.png" alt="请刷新">
                     <div class="iwantoask_wrapper">
                     <button class="main1_ani_04 btn btn-danger btn-lg btn-block" >请拨156-1000-2502</button>
                   </div>
@@ -56,8 +56,8 @@
                 </div>
                 
               </div>
-              <img class="customprev" src="https://cdn.huixinhuiyi.com/img/prev.png" alt="arrows">
-              <img class="customnext" src="https://cdn.huixinhuiyi.com/img/next.png" alt="arrows">
+              <img class="customprev" src="https://cdn.huixinhuiyi.com/img/prev.png" alt="左箭头">
+              <img class="customnext" src="https://cdn.huixinhuiyi.com/img/next.png" alt="右箭头">
             </div>
               
 
@@ -257,13 +257,13 @@
               <div class="sub_casepic">
                 <ul>
                   <li><a href="https://cdn.huixinhuiyi.com/img/cases/interior_sm1.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="interior" data-title="室内案例2（点击右方X或图片外深色区域以关闭）">
-                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/interior_sm1.jpg" alt="请刷新"></figure>
+                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/interior_sm1.jpg" alt="服装店鞋店效果图案例"></figure>
                   </a></li>
                   <li><a href="https://cdn.huixinhuiyi.com/img/cases/interior_sm2.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="interior" data-title="室内案例3（点击右方X或图片外深色区域以关闭）">
-                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/interior_sm2.jpg" alt="请刷新"></figure>
+                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/interior_sm2.jpg" alt="北欧风格家装效果图案例"></figure>
                   </a></li>
                   <li><a href="https://cdn.huixinhuiyi.com/img/cases/interior_sm3.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="interior" data-title="室内案例4（点击右方X或图片外深色区域以关闭）">
-                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/interior_sm3.jpg" alt="请刷新"></figure>
+                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/interior_sm3.jpg" alt="日式空间工装效果图案例"></figure>
                   </a></li>
                 </ul>
               </div>
@@ -275,7 +275,7 @@
               <a href="https://cdn.huixinhuiyi.com/img/cases/exterior1.jpg" data-toggle="tooltip" data-placement="bottom" title="点击查看大图" data-lightbox="exterior" data-title="室外案例1（点击右方X或图片外深色区域以关闭）">
                 <div class="big_case_wrapper" style="position: relative;">
                 <figure class="overflowhidden main_case">      
-              <img class="cases_images" src="https://cdn.huixinhuiyi.com/img/exterior1.jpg" alt="请刷新">
+              <img class="cases_images" src="https://cdn.huixinhuiyi.com/img/exterior1.jpg" alt="售楼处建筑效果图案例">
               </figure><div class="case_enlarge_hint"><i class="ion-android-expand"></i></div></div></a>
               
               <div class="cases_box_text">
@@ -286,11 +286,11 @@
               <div class="sub_casepic">
                 <ul>
                   <li><a href="https://cdn.huixinhuiyi.com/img/cases/exterior_sm1.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="exterior" data-title="室外案例2（点击右方X或图片外深色区域以关闭）">
-                  <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/exterior_sm1.jpg" alt="请刷新"></figure></a></li>
+                  <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/exterior_sm1.jpg" alt="学校办公楼效果图案例"></figure></a></li>
                   <li><a href="https://cdn.huixinhuiyi.com/img/cases/exterior_sm2.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="exterior" data-title="室外案例3（点击右方X或图片外深色区域以关闭）">
-                  <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/exterior_sm2.jpg" alt="请刷新"></figure></a></li>
+                  <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/exterior_sm2.jpg" alt="办公大楼效果图案例"></figure></a></li>
                   <li><a href="https://cdn.huixinhuiyi.com/img/cases/exterior_sm3.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="exterior" data-title="室外案例4（点击右方X或图片外深色区域以关闭）">
-                  <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/exterior_sm3.jpg" alt="请刷新"></figure></a></li>
+                  <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/exterior_sm3.jpg" alt="工地现场效果图案例"></figure></a></li>
                 </ul>
               </div>
               <a class="btn btn-default" href="<?php echo get_category_link(12); ?>">更多室外案例</a>  
@@ -301,7 +301,7 @@
               <a href="https://cdn.huixinhuiyi.com/img/cases/industry1.jpg" data-toggle="tooltip" data-placement="bottom" title="点击查看大图" data-lightbox="industry" data-title="工业案例1（点击右方X或图片外深色区域以关闭）">
                 <div class="big_case_wrapper" style="position: relative;">
                 <figure class="overflowhidden main_case">      
-              <img class="cases_images" src="https://cdn.huixinhuiyi.com/img/industry1.jpg" alt="请刷新">
+              <img class="cases_images" src="https://cdn.huixinhuiyi.com/img/industry1.jpg" alt="轮渡客船船舶效果图案例">
               </figure><div class="case_enlarge_hint"><i class="ion-android-expand"></i></div>
             </div>
           </a>
@@ -312,11 +312,11 @@
               <div class="sub_casepic">
                 <ul>
                   <li><a href="https://cdn.huixinhuiyi.com/img/cases/industry_sm1.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="industry" data-title="工业案例2（点击右方X或图片外深色区域以关闭）">
-                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/industry_sm1.jpg" alt="请刷新"></figure></a></li>
+                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/industry_sm1.jpg" alt="道闸效果图案例"></figure></a></li>
                   <li><a href="https://cdn.huixinhuiyi.com/img/cases/industry_sm2.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="industry" data-title="工业案例3（点击右方X或图片外深色区域以关闭）">
-                  <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/industry_sm2.jpg" alt="请刷新"></figure></a></li>
+                  <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/industry_sm2.jpg" alt="监控室指挥中心效果图案例"></figure></a></li>
                   <li><a href="https://cdn.huixinhuiyi.com/img/cases/industry_sm3.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="industry" data-title="工业案例4（点击右方X或图片外深色区域以关闭）">
-                  <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/industry_sm3.jpg" alt="请刷新"></figure></a></li>
+                  <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/industry_sm3.jpg" alt="保管箱库效果图案例"></figure></a></li>
                 </ul>
               </div>
               <a class="btn btn-default" href="<?php echo get_category_link(13); ?>">更多工业案例</a>  
@@ -336,7 +336,7 @@
               
                 <div class="big_case_wrapper" style="position: relative;">
                     <figure class="overflowhidden main_case">     
-              <img class="cases_images" src="https://cdn.huixinhuiyi.com/img/product1.jpg" alt="请刷新">
+              <img class="cases_images" src="https://cdn.huixinhuiyi.com/img/product1.jpg" alt="阳光房效果图案例">
               </figure><div class="case_enlarge_hint"><i class="ion-android-expand"></i></div>
                 </div>
               </a>
@@ -347,11 +347,11 @@
               <div class="sub_casepic">
                 <ul>
                   <li><a href="https://cdn.huixinhuiyi.com/img/cases/product_sm1.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="product" data-title="产品案例2（点击右方X或图片外深色区域以关闭）">
-                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/product_sm1.jpg" alt="请刷新"></figure></a></li>
+                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/product_sm1.jpg" alt="地下车库入口雨棚效果图案例"></figure></a></li>
                   <li><a href="https://cdn.huixinhuiyi.com/img/cases/product_sm2.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="product" data-title="产品案例3（点击右方X或图片外深色区域以关闭）">
-                  <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/product_sm2.jpg" alt="请刷新"></figure></a></li>
+                  <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/product_sm2.jpg" alt="车棚窗棚效果图案例"></figure></a></li>
                   <li><a href="https://cdn.huixinhuiyi.com/img/cases/product_sm3.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="product" data-title="产品案例4（点击右方X或图片外深色区域以关闭）">
-                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/product_sm3.jpg" alt="请刷新"></figure></a></li>
+                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/product_sm3.jpg" alt="植物背景墙水景效果图案例"></figure></a></li>
                 </ul>
               </div>
               <a class="btn btn-default" href="<?php echo get_category_link(14); ?>">更多产品案例</a>  
@@ -362,7 +362,7 @@
             <a href="https://cdn.huixinhuiyi.com/img/cases/eng1.jpg" data-toggle="tooltip" data-placement="bottom" title="点击查看大图" data-lightbox="eng" data-title="工程案例1（点击右方X或图片外深色区域以关闭）">
               <div class="big_case_wrapper" style="position: relative;">
               <figure class="overflowhidden main_case">      
-              <img class="cases_images" src="https://cdn.huixinhuiyi.com/img/eng1.jpg" alt="请刷新">
+              <img class="cases_images" src="https://cdn.huixinhuiyi.com/img/eng1.jpg" alt="外墙干挂大理石工程效果图案例">
             </figure><div class="case_enlarge_hint"><i class="ion-android-expand"></i></div>
           </div>
         </a>
@@ -373,11 +373,11 @@
               <div class="sub_casepic">
                 <ul>
                   <li><a href="https://cdn.huixinhuiyi.com/img/cases/eng_sm1.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="eng" data-title="工程案例2（点击右方X或图片外深色区域以关闭）">
-                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/eng_sm1.jpg" alt="请刷新"></figure></a></li>
+                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/eng_sm1.jpg" alt="计算机教室电脑教室机房工程效果图案例"></figure></a></li>
                   <li><a href="https://cdn.huixinhuiyi.com/img/cases/eng_sm3.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="eng" data-title="工程案例3（点击右方X或图片外深色区域以关闭）">
-                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/eng_sm3.jpg" alt="请刷新"></figure></a></li>
+                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/eng_sm3.jpg" alt="停车场工程效果图案例"></figure></a></li>
                   <li><a href="https://cdn.huixinhuiyi.com/img/cases/eng_sm2.jpg" data-toggle="tooltip" data-placement="top" title="点击查看大图" data-lightbox="eng" data-title="工程案例4（点击右方X或图片外深色区域以关闭）">
-                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/eng_sm2.jpg" alt="请刷新"></figure></a></li>
+                    <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/eng_sm2.jpg" alt="服务器机房工程效果图案例"></figure></a></li>
                 </ul>
               </div>
               <a class="btn btn-default" href="<?php echo get_category_link(15); ?>">更多工程案例</a>  
@@ -388,7 +388,7 @@
               <a href="<?php echo site_url('/vrcase')?>" data-toggle="tooltip" data-placement="bottom" title="点击进入漫游" >
               <div class="big_case_wrapper" style="position: relative;">
               <figure class="overflowhidden main_case">      
-              <img class="cases_images" src="https://cdn.huixinhuiyi.com/img/vr1.jpg" alt="请刷新">
+              <img class="cases_images" src="https://cdn.huixinhuiyi.com/img/vr1.jpg" alt="720全景漫游案例">
             </figure>
           </div>
         </a>
