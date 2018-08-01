@@ -394,7 +394,10 @@ border-radius: 6px;
 .pagination{
     font-size:75%;
 }
-
+.search_container{
+    padding-left: 65%;
+    padding-right:10px;
+}
 
 @media only screen and (min-width:1200px) {}
 
@@ -480,6 +483,10 @@ border-radius: 6px;
     .main_case{
         height:auto;
     }
+    .search_container{
+        padding-left: 45%;
+        padding-right:10px;
+    }
 }
 
 
@@ -564,5 +571,9 @@ border-radius: 6px;
     }
     .main_case{
         height:auto;
+    }
+    .search_container{
+        padding-left: 5px;
+        padding-right:5px;
     }
 }

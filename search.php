@@ -24,11 +24,12 @@
     <div class="row">
     <div class="text-center">
                         <h3 class="article_title">“<?php echo  get_query_var( 's' )  ?>”案例搜索结果：</h3>
-                        <h4  style="font-size:75%;line-height:2.0; color:#cccccc;">如下方显示无结果返回，请减少关键词数量，并尝试在词与词之间添加空格，再次进行搜索。例如：搜索"中式装修家装效果图"，请输入“中式&nbsp;家装&nbsp;效果图”进行搜索。<br>搜索功能完善中，请拨打：156-1000-2502及时为您提供案例展示。</h4>
-                </div>
-    <div class="col-xs-12 search_pics">
-          
+                        <h4  style="font-size:75%;line-height:2.0; color:#cccccc;">如下方显示无结果返回，请减少关键词数量，并尝试在词与词之间添加空格，再次进行搜索。例如：搜索"中式装修家装效果图"，请输入“中式&nbsp;家装”进行搜索。<br>搜索功能完善中，请拨打：156-1000-2502及时为您提供案例展示。</h4>
+                
+    
+          <div class="search_container"style="margin-bottom:30px;">
                    <?php get_search_form();?>
+                   </div>
             </div>
            <div class="col-md-12">
             
