@@ -64,6 +64,15 @@ if (!is_home() AND !is_search()) { wp_title(''); }
 
   gtag('config', 'UA-123001211-1');
 </script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?98f33f65f9e7dcd30efa96dcef303fda";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
 
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
