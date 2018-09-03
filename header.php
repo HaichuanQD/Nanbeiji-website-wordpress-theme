@@ -10,17 +10,25 @@
 
 if (is_home()||is_search()) { bloginfo('name'); } 
 
-else{wp_title(''); echo ' | '; bloginfo('name');} 
+else{wp_title(''); echo '_青岛汇新慧艺效果图工作室';} 
 
 ?> </title>
-<meta name="keywords" content="青岛效果图,青岛效果图制作,青岛效果图设计,效果图设计,效果图制作">
-<meta name="description" content="青岛效果图,青岛汇新慧艺效果图——您身边的制图专家,主营：效果图制作设计,室内室外效果图,产品展示效果图制作,720全景展示,竭诚为您服务,<?php 
 
-if (!is_home() AND !is_search()) { wp_title(''); } 
+<meta name="keywords" content="<?php 
+
+if (is_home()) { echo '青岛效果图,青岛效果图制作,青岛效果图设计,效果图设计,效果图制作'; } 
 
 
 
-?>">
+?>"/>
+
+<meta name="description" content="<?php 
+
+if (is_home()) { echo '青岛效果图,青岛汇新慧艺效果图——您身边的制图专家,主营：效果图制作设计,室内室外效果图,产品展示效果图制作,720全景展示,竭诚为您服务,'; } 
+
+
+
+?>"/>
 <style>/*背景信息从CSS文件提取出来，改为动态的*/
    .lunbo1{
     background-image: url("https://cdn.huixinhuiyi.com/img/p1.png");}

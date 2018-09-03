@@ -9,9 +9,9 @@
                 <div class="swiper-slide lunbo1" >
               
                 <div class="container makemiddle" >
-                    <img class="main1_ani_01"  data-animation-in="fadeInDown" data-delay-in="0.2" data-duration-in="0.7" src="https://cdn.huixinhuiyi.com/img/logowhite.png" alt="请刷新">
-                    <img class="main1_ani_02"  data-animation-in="fadeIn" data-delay-in="0.4" data-duration-in="0.9" src="https://cdn.huixinhuiyi.com/img/p1_middletext.png" alt="请刷新">
-                    <img class="main1_ani_03"  data-animation-in="fadeInUp" data-delay-in="0.4" data-duration-in="0.9" src="https://cdn.huixinhuiyi.com/img/p1_longtext.png" alt="请刷新">
+                    <img class="main1_ani_01"  data-animation-in="fadeInDown" data-delay-in="0.2" data-duration-in="0.7" src="https://cdn.huixinhuiyi.com/img/logowhite.png"  >
+                    <img class="main1_ani_02"  data-animation-in="fadeIn" data-delay-in="0.4" data-duration-in="0.9" src="https://cdn.huixinhuiyi.com/img/p1_middletext.png"  >
+                    <img class="main1_ani_03"  data-animation-in="fadeInUp" data-delay-in="0.4" data-duration-in="0.9" src="https://cdn.huixinhuiyi.com/img/p1_longtext.png"  >
                     <div class="iwantoask_wrapper">
                     <button class="main1_ani_04 btn btn-danger btn-lg btn-block" >请拨156-1000-2502</button>
                   </div>
@@ -24,9 +24,9 @@
                 <div class="swiper-slide lunbo2">
                   
                     <div class="container makemiddle">
-                      <img class="main1_ani_05" data-animation-in="fadeIn" data-delay-in="0.1" data-duration-in="0.5" src="https://cdn.huixinhuiyi.com/img/p2_left01.png" alt="效果图">
-                      <img class="main1_ani_06" data-animation-in="fadeIn" data-delay-in="1.5" data-duration-in="2" src="https://cdn.huixinhuiyi.com/img/p2_left02.png" alt="效果图">
-                      <img class="main1_ani_07" data-animation-in="fadeIn" data-delay-in="0.1" data-duration-in="0.5" src="https://cdn.huixinhuiyi.com/img/p2_right.png" alt="效果图">
+                      <img class="main1_ani_05" data-animation-in="fadeIn" data-delay-in="0.1" data-duration-in="0.5" src="https://cdn.huixinhuiyi.com/img/p2_left01.png" >
+                      <img class="main1_ani_06" data-animation-in="fadeIn" data-delay-in="1.5" data-duration-in="2" src="https://cdn.huixinhuiyi.com/img/p2_left02.png" >
+                      <img class="main1_ani_07" data-animation-in="fadeIn" data-delay-in="0.1" data-duration-in="0.5" src="https://cdn.huixinhuiyi.com/img/p2_right.png" >
                       <div class="aboutusbtn_wrapper">
                     <a href="<?php echo get_site_url(null,'/about/')?>" class="btn btn-info btn-lg btn-block" ><img class="about_us_button_text" src="https://cdn.huixinhuiyi.com/img/p2_aboutus.png" alt="关于我们"></a>
                   </div>               
@@ -35,9 +35,9 @@
                 <div class="swiper-slide lunbo3">
                     <div class="container makemiddle">
                       
-                      <img class="main1_ani_08" data-animation-in="bounceIn" data-delay-in="0.1"  src="https://cdn.huixinhuiyi.com/img/p3_text.png" alt="选择我们">
-                      <img class="main1_ani_09" data-animation-in="fadeIn" data-delay-in="0.1" src="https://cdn.huixinhuiyi.com/img/p3_middle.png" alt="效果图">
-                      <img class="main1_ani_10" data-animation-in="bounceInLeft" data-delay-in="0.9" data-duration-in="1.5" src="https://cdn.huixinhuiyi.com/img/p3_jump.png" alt="效果图">
+                      <img class="main1_ani_08" data-animation-in="bounceIn" data-delay-in="0.1"  src="https://cdn.huixinhuiyi.com/img/p3_text.png" >
+                      <img class="main1_ani_09" data-animation-in="fadeIn" data-delay-in="0.1" src="https://cdn.huixinhuiyi.com/img/p3_middle.png" >
+                      <img class="main1_ani_10" data-animation-in="bounceInLeft" data-delay-in="0.9" data-duration-in="1.5" src="https://cdn.huixinhuiyi.com/img/p3_jump.png" >
                         
                     </div>  
                   
@@ -47,17 +47,17 @@
                 <div class="swiper-slide lunbo4">
                   <div class="container makemiddle">
                       
-                      <img class="main1_ani_11" data-animation-in="fadeIn" data-delay-in="0.1" src="https://cdn.huixinhuiyi.com/img/p4_title.png" alt="选择我们">
-                      <img class="main1_ani_12" data-animation-in="fadeIn" data-delay-in="0.1" src="https://cdn.huixinhuiyi.com/img/p4_building.png" alt="效果图">
-                      <a   href="<?php echo site_url('/portfolio')?>"><img class="main1_ani_15" src="https://cdn.huixinhuiyi.com/img/p4_btn.png" alt="作品案例"></a>
-                      <img class="main1_ani_16" data-animation-in="fadeIn" data-delay-in="0.1" src="https://cdn.huixinhuiyi.com/img/p4_tip.png" alt="效果图">
+                      <img class="main1_ani_11" data-animation-in="fadeIn" data-delay-in="0.1" src="https://cdn.huixinhuiyi.com/img/p4_title.png" >
+                      <img class="main1_ani_12" data-animation-in="fadeIn" data-delay-in="0.1" src="https://cdn.huixinhuiyi.com/img/p4_building.png" >
+                      <a   href="<?php echo site_url('/portfolio')?>"><img class="main1_ani_15" src="https://cdn.huixinhuiyi.com/img/p4_btn.png" ></a>
+                      <img class="main1_ani_16" data-animation-in="fadeIn" data-delay-in="0.1" src="https://cdn.huixinhuiyi.com/img/p4_tip.png" >
                         
                     </div>
                 </div>
                 
               </div>
-              <img class="customprev" src="https://cdn.huixinhuiyi.com/img/prev.png" alt="左箭头">
-              <img class="customnext" src="https://cdn.huixinhuiyi.com/img/next.png" alt="右箭头">
+              <img class="customprev" src="https://cdn.huixinhuiyi.com/img/prev.png" >
+              <img class="customnext" src="https://cdn.huixinhuiyi.com/img/next.png" >
             </div>
               
 
@@ -74,25 +74,25 @@
 
         <div class="swiper-slide-m lunbo-m1">
           <div class="wrapper-m">
-          <a href="#"><img src="https://cdn.huixinhuiyi.com/img/mobile_01.jpg" alt="啊噢，轮播图载入失败了@——@"></a>
+          <a href="#"><img src="https://cdn.huixinhuiyi.com/img/mobile_01.jpg" ></a>
           </div>
         </div>
 
         <div class="swiper-slide-m lunbo-m2">
           <div class="wrapper-m">
-          <a href="#"><img src="https://cdn.huixinhuiyi.com/img/mobile_02.jpg" alt="啊噢，轮播图载入失败了@——@"></a>
+          <a href="#"><img src="https://cdn.huixinhuiyi.com/img/mobile_02.jpg" ></a>
           </div>
         </div>
 
         <div class="swiper-slide-m lunbo-m3">
           <div class="wrapper-m">
-          <a href="#"><img src="https://cdn.huixinhuiyi.com/img/mobile_03.jpg" alt="啊噢，轮播图载入失败了@——@"></a>
+          <a href="#"><img src="https://cdn.huixinhuiyi.com/img/mobile_03.jpg" ></a>
           </div>
         </div>
 
         <div class="swiper-slide-m lunbo-m4">
           <div class="wrapper-m">
-          <a href="#"><img src="https://cdn.huixinhuiyi.com/img/mobile_04.jpg" alt="啊噢，轮播图载入失败了@——@"></a>
+          <a href="#"><img src="https://cdn.huixinhuiyi.com/img/mobile_04.jpg" ></a>
           </div>
         </div>   
         
@@ -107,21 +107,21 @@
                     <h3 class="text-center">室内效果图</h3> 
                     <p class="text-center">家装 工装 门头 展会等</p> 
                     <div class="overlay">
-                      <a href="<?php echo get_category_link(3); ?>" class="btn btn-default">案例作品</a>
+                      <a href="<?php echo get_category_link(3); ?>"  rel='nofollow' class="btn btn-default">案例作品</a>
                     </div>
                   </div>
                   <div class="col-xs-6 col-sm-3 service2 hover_overlay_fade">
                     <h3 class="text-center">室外效果图</h3> 
                     <p class="text-center">建筑 庭院 门头 外墙等</p> 
                     <div class="overlay">
-                      <a href="<?php echo get_category_link(12); ?>" class="btn btn-default">案例作品</a>
+                      <a href="<?php echo get_category_link(12); ?>"  rel='nofollow' class="btn btn-default">案例作品</a>
                     </div>
                   </div>
                   <div class="col-xs-6 col-sm-3 service3 hover_overlay_fade">
                     <h3 class="text-center">产品效果图</h3> 
                     <p class="text-center">阳光房 雨棚 橱柜 等</p> 
                     <div class="overlay">
-                      <a href="<?php echo get_category_link(14); ?>" class="btn btn-default">案例作品</a>
+                      <a href="<?php echo get_category_link(14); ?>"  rel='nofollow' class="btn btn-default">案例作品</a>
                     </div>
                   </div>
                   <div class="col-xs-6 col-sm-3 service4 hover_overlay_fade">
@@ -129,7 +129,7 @@
                       <p class="text-center">全景 VR漫游 动画</p>
                     <div style="width: 100%"></div>
                     <div class="overlay">
-                      <a href="<?php echo site_url('/vrcase')?>" target="_blank" class="btn btn-default">案例作品</a>
+                      <a href="<?php echo site_url('/vrcase')?>"  rel='nofollow' target="_blank" class="btn btn-default">案例作品</a>
                     </div>
                   </div>
               </div>
@@ -251,7 +251,7 @@
             
             
               <div class="cases_box_text">
-                  <h3 class="text-center">室内效果图</h3>
+                 <a href="<?php echo get_category_link(3); ?>"> <h3 class="text-center">室内效果图案例</h3> </a>
                   <p class="text-center">突出风格 汇新慧艺<br>青岛效果图制作 打造品质空间</p>
                 </div>
               <div class="sub_casepic">
@@ -267,7 +267,7 @@
                   </a></li>
                 </ul>
               </div>
-              <a class="btn btn-default" href="<?php echo get_category_link(3); ?>">更多室内案例</a>  
+              <a class="btn btn-default" href="<?php echo get_category_link(3); ?>" rel='nofollow'>更多室内案例</a>  
               </div>
             </div>
             <div class="col-md-4 col-sm-6">
@@ -279,7 +279,7 @@
               </figure><div class="case_enlarge_hint"><i class="ion-android-expand"></i></div></div></a>
               
               <div class="cases_box_text">
-                  <h3 class="text-center">室外效果图</h3>
+              <a href="<?php echo get_category_link(12); ?>"><h3 class="text-center">室外效果图案例</h3></a>
                   <p class="text-center">精准造型 优雅环境<br>营造高端氛围 体现建筑美学</p>
                 </div>
               
@@ -293,7 +293,7 @@
                   <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/exterior_sm3.jpg" alt="工地现场效果图案例"></figure></a></li>
                 </ul>
               </div>
-              <a class="btn btn-default" href="<?php echo get_category_link(12); ?>">更多室外案例</a>  
+              <a class="btn btn-default" href="<?php echo get_category_link(12); ?>" rel='nofollow'>更多室外案例</a>  
               </div>
             </div>
             <div class="col-md-4 col-sm-6">
@@ -306,7 +306,7 @@
             </div>
           </a>
               <div class="cases_box_text">
-                  <h3 class="text-center">工业效果图</h3>
+              <a href="<?php echo get_category_link(13); ?>"><h3 class="text-center">工业效果图案例</h3></a>
                   <p class="text-center">准确建模 高效专业<br>工业机械专家督导 处处细节精心表现</p>
                 </div>
               <div class="sub_casepic">
@@ -319,7 +319,7 @@
                   <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/industry_sm3.jpg" alt="保管箱库效果图案例"></figure></a></li>
                 </ul>
               </div>
-              <a class="btn btn-default" href="<?php echo get_category_link(13); ?>">更多工业案例</a>  
+              <a class="btn btn-default" href="<?php echo get_category_link(13); ?>" rel='nofollow'>更多工业案例</a>  
               </div>
             </div>
             
@@ -341,7 +341,7 @@
                 </div>
               </a>
               <div class="cases_box_text">
-                  <h3 class="text-center">产品效果图</h3>
+              <a href="<?php echo get_category_link(14); ?>"><h3 class="text-center">产品效果图案例</h3></a>
                   <p class="text-center">庭院建材 产品表现<br>注重产品细节 着眼用户体验</p>
                 </div>
               <div class="sub_casepic">
@@ -354,7 +354,7 @@
                     <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/product_sm3.jpg" alt="植物背景墙水景效果图案例"></figure></a></li>
                 </ul>
               </div>
-              <a class="btn btn-default" href="<?php echo get_category_link(14); ?>">更多产品案例</a>  
+              <a class="btn btn-default" href="<?php echo get_category_link(14); ?>" rel='nofollow'>更多产品案例</a>  
               </div>
             </div>
             <div class="col-md-4 col-sm-6">
@@ -367,7 +367,7 @@
           </div>
         </a>
               <div class="cases_box_text">
-                  <h3 class="text-center">工程效果图</h3>
+              <a href="<?php echo get_category_link(15); ?>"><h3 class="text-center">工程效果图案例</h3></a>
                   <p class="text-center">高端表现 技能卓越<br>不到1%的成本支出 解决所有甲方制图需求</p>
                 </div>
               <div class="sub_casepic">
@@ -380,7 +380,7 @@
                     <figure class="overflowhidden" style="height:87px;"><img class="cases_images" src="https://cdn.huixinhuiyi.com/img/eng_sm2.jpg" alt="服务器机房工程效果图案例"></figure></a></li>
                 </ul>
               </div>
-              <a class="btn btn-default" href="<?php echo get_category_link(15); ?>">更多工程案例</a>  
+              <a class="btn btn-default" href="<?php echo get_category_link(15); ?>" rel='nofollow'>更多工程案例</a>  
               </div>
             </div>
             <div class="col-md-4 col-sm-6">
@@ -398,9 +398,9 @@
                 </div>
               <div class="sub_casepic">
                   <ul>
-                      <li><figure class="overflowhidden" style="height:87px;"><img class="cases_imagesvr" src="https://cdn.huixinhuiyi.com/img/vr_sm3.jpg" alt="请刷新"></figure></li>
-                      <li><figure class="overflowhidden" style="height:87px;"><img class="cases_imagesvr" src="https://cdn.huixinhuiyi.com/img/vr_sm2.jpg" alt="请刷新"></figure></li>
-                      <li><figure class="overflowhidden" style="height:87px;"><img class="cases_imagesvr" src="https://cdn.huixinhuiyi.com/img/vr_sm1.jpg" alt="请刷新"></figure></li>
+                      <li><figure class="overflowhidden" style="height:87px;"><img class="cases_imagesvr" src="https://cdn.huixinhuiyi.com/img/vr_sm3.jpg" ></figure></li>
+                      <li><figure class="overflowhidden" style="height:87px;"><img class="cases_imagesvr" src="https://cdn.huixinhuiyi.com/img/vr_sm2.jpg" ></figure></li>
+                      <li><figure class="overflowhidden" style="height:87px;"><img class="cases_imagesvr" src="https://cdn.huixinhuiyi.com/img/vr_sm1.jpg" ></figure></li>
                     </ul>
               </div>
               <a href="<?php echo site_url('/vrcase')?>" class="btn btn-default ">全景案例</a>  
@@ -482,7 +482,7 @@
                   
               </div>
               <div class="latest_news_author_1">
-                  <a href="<?php the_permalink(); ?>" class="btn btn-default">阅读更多</a><?php echo '<span class="hidden-md">'; echo '作者：' ; the_author();echo '</span>'; echo '&nbsp;&nbsp;' ; echo '发布于：';  echo get_the_date(); ?>
+                  <?php echo '<span class="hidden-md">'; echo '作者：' ; the_author();echo '</span>'; echo '&nbsp;&nbsp;' ; echo '发布于：';  echo get_the_date(); ?>
               </div>
              
             </div>
