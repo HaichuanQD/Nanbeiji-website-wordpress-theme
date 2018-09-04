@@ -115,7 +115,7 @@
     </div>
     <hr>
     <div class="footer-bottom">
-         <p class="text-center">© 2018 Copyright:<a href="<?php echo get_site_url()?>" rel= "nofollow" ><strong>青岛汇新慧艺</strong></a> <a href="http://www.miitbeian.gov.cn/" style="margin-left:20px;" rel= "nofollow" >鲁ICP备18032998号</a>		 	
+         <p class="text-center">© 2018 Copyright:<strong>青岛汇新慧艺</strong> <a href="http://www.miitbeian.gov.cn/" style="margin-left:20px;" rel= "nofollow" >鲁ICP备18032998号</a>		 	
 		 		<a rel= "nofollow" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37020202001022" style="display:inline-block;text-decoration:none;margin-left:20px;height:20px;line-height:20px;"><img src="https://cdn.huixinhuiyi.com/police.png" style="float:left;"/>鲁公网安备 37020202001022号</a>
 		 	</p>  
     </div>

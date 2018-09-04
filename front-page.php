@@ -240,10 +240,10 @@
           <div class="row">
             <div class="col-md-4 col-sm-6">
               <div class="cases_container" data-aos="fade-up">
-              <a href="https://cdn.huixinhuiyi.com/img/cases/interior1.jpg" data-toggle="tooltip" data-placement="bottom" title="点击查看大图" data-lightbox="interior" data-title="室内案例1（点击右方X或图片外深色区域以关闭）">
+              <a href="https://cdn.huixinhuiyi.com/portfolio/interior/interior1_enlarge.jpg" data-toggle="tooltip" data-placement="bottom" title="点击查看大图" data-lightbox="interior" data-title="室内案例1（点击右方X或图片外深色区域以关闭）">
                 <div class="big_case_wrapper" style="position: relative;">
                   <figure class="overflowhidden main_case">      
-              <img class="cases_images" src="https://cdn.huixinhuiyi.com/img/interior1.jpg" alt="青岛汇新慧艺效果图工作室 青岛效果图制作">
+              <img class="cases_images" src="https://cdn.huixinhuiyi.com/img/interior1.jpg" alt="青岛效果图制作 中式装修效果图案例">
               </figure>
               <div class="case_enlarge_hint"><i class="ion-android-expand"></i></div>
             </div>
@@ -251,7 +251,7 @@
             
             
               <div class="cases_box_text">
-                 <a href="<?php echo get_category_link(3); ?>"> <h3 class="text-center">室内效果图案例</h3> </a>
+                 <a href="<?php echo get_permalink( 391 ) ?>"> <h3 class="text-center">中式装修效果图案例</h3> </a>
                   <p class="text-center">突出风格 汇新慧艺<br>青岛效果图制作 打造品质空间</p>
                 </div>
               <div class="sub_casepic">
@@ -272,14 +272,14 @@
             </div>
             <div class="col-md-4 col-sm-6">
               <div class="cases_container" data-aos="fade-up">
-              <a href="https://cdn.huixinhuiyi.com/img/cases/exterior1.jpg" data-toggle="tooltip" data-placement="bottom" title="点击查看大图" data-lightbox="exterior" data-title="室外案例1（点击右方X或图片外深色区域以关闭）">
+              <a href="https://cdn.huixinhuiyi.com/portfolio/exterior/exterior1_enlarge.jpg" data-toggle="tooltip" data-placement="bottom" title="点击查看大图" data-lightbox="exterior" data-title="室外案例1（点击右方X或图片外深色区域以关闭）">
                 <div class="big_case_wrapper" style="position: relative;">
                 <figure class="overflowhidden main_case">      
-              <img class="cases_images" src="https://cdn.huixinhuiyi.com/img/exterior1.jpg" alt="售楼处建筑效果图案例">
+              <img class="cases_images" src="https://cdn.huixinhuiyi.com/img/exterior1.jpg" alt="建筑夜景效果图案例">
               </figure><div class="case_enlarge_hint"><i class="ion-android-expand"></i></div></div></a>
               
               <div class="cases_box_text">
-              <a href="<?php echo get_category_link(12); ?>"><h3 class="text-center">室外效果图案例</h3></a>
+              <a href="<?php echo get_permalink( 228 ) ?>"><h3 class="text-center">建筑夜景效果图案例</h3></a>
                   <p class="text-center">精准造型 优雅环境<br>营造高端氛围 体现建筑美学</p>
                 </div>
               
@@ -298,7 +298,7 @@
             </div>
             <div class="col-md-4 col-sm-6">
               <div class="cases_container" data-aos="fade-up">
-              <a href="https://cdn.huixinhuiyi.com/img/cases/industry1.jpg" data-toggle="tooltip" data-placement="bottom" title="点击查看大图" data-lightbox="industry" data-title="工业案例1（点击右方X或图片外深色区域以关闭）">
+              <a href="https://cdn.huixinhuiyi.com/portfolio/industry/industry1_enlarge.jpg" data-toggle="tooltip" data-placement="bottom" title="点击查看大图" data-lightbox="industry" data-title="工业案例1（点击右方X或图片外深色区域以关闭）">
                 <div class="big_case_wrapper" style="position: relative;">
                 <figure class="overflowhidden main_case">      
               <img class="cases_images" src="https://cdn.huixinhuiyi.com/img/industry1.jpg" alt="轮渡客船船舶效果图案例">
@@ -306,7 +306,7 @@
             </div>
           </a>
               <div class="cases_box_text">
-              <a href="<?php echo get_category_link(13); ?>"><h3 class="text-center">工业效果图案例</h3></a>
+              <a href="<?php echo get_permalink( 311 ) ?>"><h3 class="text-center">船舶客船效果图案例</h3></a>
                   <p class="text-center">准确建模 高效专业<br>工业机械专家督导 处处细节精心表现</p>
                 </div>
               <div class="sub_casepic">
@@ -332,7 +332,7 @@
         
             <div class="col-md-4 col-sm-6">
               <div class="cases_container" data-aos="fade-up">
-              <a href="https://cdn.huixinhuiyi.com/img/cases/product1.jpg" data-toggle="tooltip" data-placement="bottom" title="点击查看大图" data-lightbox="product" data-title="产品案例1（点击右方X或图片外深色区域以关闭）"> 
+              <a href="https://cdn.huixinhuiyi.com/portfolio/product/product1_enlarge.jpg" data-toggle="tooltip" data-placement="bottom" title="点击查看大图" data-lightbox="product" data-title="产品案例1（点击右方X或图片外深色区域以关闭）"> 
               
                 <div class="big_case_wrapper" style="position: relative;">
                     <figure class="overflowhidden main_case">     
@@ -341,7 +341,7 @@
                 </div>
               </a>
               <div class="cases_box_text">
-              <a href="<?php echo get_category_link(14); ?>"><h3 class="text-center">产品效果图案例</h3></a>
+              <a href="<?php echo get_permalink( 471 ) ?>"><h3 class="text-center">阳光房庭院效果图案例</h3></a>
                   <p class="text-center">庭院建材 产品表现<br>注重产品细节 着眼用户体验</p>
                 </div>
               <div class="sub_casepic">
@@ -359,7 +359,7 @@
             </div>
             <div class="col-md-4 col-sm-6">
               <div class="cases_container" data-aos="fade-up">
-            <a href="https://cdn.huixinhuiyi.com/img/cases/eng1.jpg" data-toggle="tooltip" data-placement="bottom" title="点击查看大图" data-lightbox="eng" data-title="工程案例1（点击右方X或图片外深色区域以关闭）">
+            <a href="https://cdn.huixinhuiyi.com/portfolio/engine/eng1_enlarge.jpg" data-toggle="tooltip" data-placement="bottom" title="点击查看大图" data-lightbox="eng" data-title="工程案例1（点击右方X或图片外深色区域以关闭）">
               <div class="big_case_wrapper" style="position: relative;">
               <figure class="overflowhidden main_case">      
               <img class="cases_images" src="https://cdn.huixinhuiyi.com/img/eng1.jpg" alt="外墙干挂大理石工程效果图案例">
@@ -367,7 +367,7 @@
           </div>
         </a>
               <div class="cases_box_text">
-              <a href="<?php echo get_category_link(15); ?>"><h3 class="text-center">工程效果图案例</h3></a>
+              <a href="<?php echo get_permalink( 124 ) ?>"><h3 class="text-center">建筑幕墙外墙工程案例</h3></a>
                   <p class="text-center">高端表现 技能卓越<br>不到1%的成本支出 解决所有甲方制图需求</p>
                 </div>
               <div class="sub_casepic">
@@ -393,7 +393,7 @@
           </div>
         </a>
               <div class="cases_box_text">
-                  <h3 class="text-center">VR&全景等全新展示模式</h3>
+              <a href="<?php echo site_url('/vrcase')?>"><h3 class="text-center">全景漫游样板间</h3></a>
                   <p  class="text-center">VR时代 已经到来<br>基于效果图业务 走向沉浸式体验</p>
                 </div>
               <div class="sub_casepic">
@@ -403,7 +403,7 @@
                       <li><figure class="overflowhidden" style="height:87px;"><img class="cases_imagesvr" src="https://cdn.huixinhuiyi.com/img/vr_sm1.jpg" ></figure></li>
                     </ul>
               </div>
-              <a href="<?php echo site_url('/vrcase')?>" class="btn btn-default ">全景案例</a>  
+              <a href="<?php echo site_url('/vrcase')?>" class="btn btn-default" rel="nofollow" >全景案例</a>  
               </div>
             </div>
           </div>

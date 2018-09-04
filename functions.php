@@ -3,6 +3,7 @@
     // Register Custom Navigation Walker
     require_once('wp_bootstrap_pagination.php');
     add_theme_support( 'post-thumbnails' ); 
+    remove_action( 'wp_head', 'feed_links_extra', 3 ); // Display the links to the extra feeds such as category feeds
 
     function remove_admin_login_header() {
         remove_action('wp_head', '_admin_bar_bump_cb');
