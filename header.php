@@ -33,6 +33,9 @@ if (is_home()) { echo '青岛汇新慧艺装修设计公司，提供青岛装修
    .lunbo1{
     background-image: url("https://cdn.huixinhuiyi.com/img/p1.png");}
 
+   .lunbo_midaut{
+    background-image: url("https://cdn.huixinhuiyi.com/img/auback.jpg");}
+
    .case-hover:hover .hover-link, .tj-case figure div:hover .hover-link, .pic-link:hover .hover-link {
 
     background-image: url("https://cdn.huixinhuiyi.com/img/hover-link.png");}

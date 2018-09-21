@@ -6,7 +6,17 @@
       <div class="slider-container" >
         <div class="swiper-container swiper-container-main1"><!--真正意义上的轮播图插件分区开始了-->
               <div class="swiper-wrapper">
-                <div class="swiper-slide lunbo1" >
+
+              <div class="swiper-slide lunbo_midaut" >
+              
+              <div class="container makemiddle" >
+                  <img class="main1_ani_au01"  data-animation-in="fadeInUp" data-delay-in="0.4" data-duration-in="0.7" src="https://cdn.huixinhuiyi.com/img/ma01.png"  >
+                  <img class="main1_ani_au02"  data-animation-in="fadeIn" data-delay-in="0.6" data-duration-in="0.9" src="https://cdn.huixinhuiyi.com/img/ma02.png"  >
+                  <img class="main1_ani_au03"  data-animation-in="fadeInUp" data-delay-in="0.4" data-duration-in="0.9" src="https://cdn.huixinhuiyi.com/img/ma03.png"  >
+
+              </div>
+              </div>
+              <div class="swiper-slide lunbo1" >
               
                 <div class="container makemiddle" >
                     <img class="main1_ani_01"  data-animation-in="fadeInDown" data-delay-in="0.2" data-duration-in="0.7" src="https://cdn.huixinhuiyi.com/img/logowhite.png"  >
@@ -74,13 +84,19 @@
 
         <div class="swiper-slide-m lunbo-m1">
           <div class="wrapper-m">
+          <a href="#"><img src="https://cdn.huixinhuiyi.com/img/mobile_au.jpg" ></a>
+          </div>
+        </div>
+
+        <div class="swiper-slide-m lunbo-m1">
+          <div class="wrapper-m">
           <a href="#"><img src="https://cdn.huixinhuiyi.com/img/mobile_01.jpg" ></a>
           </div>
         </div>
 
         <div class="swiper-slide-m lunbo-m2">
           <div class="wrapper-m">
-          <a href="#"><img src="https://cdn.huixinhuiyi.com/img/mobile_02.jpg" ></a>
+          <a href="<?php echo get_site_url(null,'/about/')?>"><img src="https://cdn.huixinhuiyi.com/img/mobile_02.jpg" ></a>
           </div>
         </div>
 
@@ -92,7 +108,7 @@
 
         <div class="swiper-slide-m lunbo-m4">
           <div class="wrapper-m">
-          <a href="#"><img src="https://cdn.huixinhuiyi.com/img/mobile_04.jpg" ></a>
+          <a href="<?php echo get_site_url(null,'/portfolio/') ?>"><img src="https://cdn.huixinhuiyi.com/img/mobile_04.jpg" ></a>
           </div>
         </div>   
         
