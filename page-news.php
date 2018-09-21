@@ -139,7 +139,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <h2 class="cat_titles">新闻通知 <a class="btn btn-default" style='margin-top:5px;margin-bottom:5px;margin-left:70%;' href="<?php get_category_link(19); ?>">更多&gt;&gt;</a></h2>
+            <h2 class="cat_titles">新闻通知 <a class="btn btn-default" style='margin-top:5px;margin-bottom:5px;margin-left:70%;' href="<?php echo get_category_link(19); ?>">更多&gt;&gt;</a></h2>
             <ul class="media-list main-list">
             <?php
 
@@ -185,7 +185,7 @@
             </ul>
           </div>
           <div class="col-md-6">
-              <h2 class="cat_titles">设计理念 <a class="btn btn-default"style='margin-top:5px;margin-bottom:5px;margin-left:70%;' href="<?php get_category_link(20); ?>">更多&gt;&gt;</a></h2>
+              <h2 class="cat_titles">设计理念 <a class="btn btn-default"style='margin-top:5px;margin-bottom:5px;margin-left:70%;' href="<?php echo get_category_link(20); ?>">更多&gt;&gt;</a></h2>
               <ul class="media-list main-list">
               <?php
 
@@ -229,7 +229,7 @@
               </ul>
             </div>
             <div class="col-md-6">
-                <h2 class="cat_titles">三维技法 <a class="btn btn-default"style='margin-top:5px;margin-bottom:5px;margin-left:70%;' href="<?php get_category_link(21); ?>">更多&gt;&gt;</a></h2>
+                <h2 class="cat_titles">三维技法 <a class="btn btn-default"style='margin-top:5px;margin-bottom:5px;margin-left:70%;' href="<?php echo get_category_link(21); ?>">更多&gt;&gt;</a></h2>
                 <ul class="media-list main-list">
                 <?php
 
@@ -273,7 +273,7 @@
                 </ul>
               </div>
               <div class="col-md-6">
-                  <h2 class="cat_titles">原创随笔 <a class="btn btn-default"style='margin-top:5px;margin-bottom:5px;margin-left:70%;' href="<?php get_category_link(22); ?>">更多&gt;&gt;</a></h2>
+                  <h2 class="cat_titles">原创随笔 <a class="btn btn-default"style='margin-top:5px;margin-bottom:5px;margin-left:70%;' href="<?php echo get_category_link(22); ?>">更多&gt;&gt;</a></h2>
                   <ul class="media-list main-list">
                   <?php
 
